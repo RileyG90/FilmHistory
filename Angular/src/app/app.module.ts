@@ -13,6 +13,7 @@ import { NavbarComponent } from './@shared/components/navbar/navbar.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RankingsComponent } from './components/rankings/rankings.component';
+import { FavoritesComponent } from './components/favorites/favorites.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RankingsComponent } from './components/rankings/rankings.component';
     NavbarComponent,
     WelcomeComponent,
     ProfileComponent,
-    RankingsComponent
+    RankingsComponent,
+    FavoritesComponent
   ],
   imports: [
     BrowserModule,
