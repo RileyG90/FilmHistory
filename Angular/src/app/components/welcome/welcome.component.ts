@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommentApiService } from 'src/app/@core/services/api/comment-api.service';
 
 @Component({
   selector: 'tnv-welcome',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private commentApiService: CommentApiService, ) { }
 
   ngOnInit(): void {
+    this.commentApiService.getAllComment().subscribe({
+      next: (res) => console.log(res),
+      error: (err) => console.log(err)
+    });
   }
 
 }
