@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,6 +14,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RankingsComponent } from './components/rankings/rankings.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
+import { FooterComponent } from './@shared/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,11 @@ import { FavoritesComponent } from './components/favorites/favorites.component';
     WelcomeComponent,
     ProfileComponent,
     RankingsComponent,
-    FavoritesComponent
+    FavoritesComponent,
+    FooterComponent
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   imports: [
     BrowserModule,
