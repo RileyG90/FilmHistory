@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,11 +14,9 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RankingsComponent } from './components/rankings/rankings.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
-<<<<<<< HEAD
 import { HttpClientModule } from '@angular/common/http';
-=======
 import { FooterComponent } from './@shared/components/footer/footer.component';
->>>>>>> 71a558112eb537f5acfaa2a376005dbe850fdea9
+
 
 @NgModule({
   declarations: [
@@ -33,9 +31,6 @@ import { FooterComponent } from './@shared/components/footer/footer.component';
     RankingsComponent,
     FavoritesComponent,
     FooterComponent
-  ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
   ],
   imports: [
     BrowserModule,
