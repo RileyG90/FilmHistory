@@ -12,14 +12,11 @@ export class WelcomeComponent implements OnInit {
   constructor(private commentApiService: CommentApiService, private movieApiService: MovieApiService) { }
 
   ngOnInit(): void {
-    this.commentApiService.getAllComment().subscribe({
-      next: (res) => console.log(res),
-      error: (err) => console.log(err)
-    });
+    
+  }
 
-    this.movieApiService.getMovieFromDateToDate("2007-01-01", "2011-12-31").subscribe({
-      next: (res) => console.log(res)
-    });
+  getAllComments(){
+    this.commentApiService.getAllComment();
   }
 
 }

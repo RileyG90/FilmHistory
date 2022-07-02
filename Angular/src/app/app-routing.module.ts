@@ -9,6 +9,7 @@ import { WelcomeComponent } from "./components/welcome/welcome.component";
 import { ProfileComponent } from "./components/profile/profile.component";
 import { RankingsComponent } from "./components/rankings/rankings.component";
 import { FavoritesComponent } from "./components/favorites/favorites.component";
+import { MovieComponent } from "./components/movie/movie.component";
 
 const routes: Routes = [
   {

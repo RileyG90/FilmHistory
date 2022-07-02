@@ -16,6 +16,8 @@ import { RankingsComponent } from './components/rankings/rankings.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './@shared/components/footer/footer.component';
+import { MovieItemComponent } from './components/movie-item/movie-item.component';
+import { MovieComponent } from './components/movie/movie.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { FooterComponent } from './@shared/components/footer/footer.component';
     ProfileComponent,
     RankingsComponent,
     FavoritesComponent,
-    FooterComponent
+    FooterComponent,
+    MovieItemComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,
