@@ -21,6 +21,7 @@ const routes: Routes = [
       { path: "profile", component: ProfileComponent },
       { path: "rankings", component: RankingsComponent },
       { path: "favorites", component: FavoritesComponent },
+      { path: "movielist", component: MovieComponent },
       { path: "", redirectTo: "home", pathMatch: 'full' },
     ],
   },

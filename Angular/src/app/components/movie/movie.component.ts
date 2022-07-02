@@ -10,8 +10,8 @@ import { MovieData } from 'src/app/models/movieData';
 })
 export class MovieComponent implements OnInit {
 
-  filterGteDate: string = '2007-01-01';
-  filterLteDate: string = '011-12-31';
+  filterGteDate: string = "2020-01-01";
+  filterLteDate: string = "2021-12-31";
 
   movies: Partial<MovieData> [] = [];
 
@@ -26,9 +26,12 @@ export class MovieComponent implements OnInit {
   }
 
   getMovieByDateRange(index: number){
-    this.movieApiService.getMovieByDateRange(this.filterGteDate, this.filterLteDate).subscribe({
-      next: (res) => console.log('res = this.movies[index]') 
+    this.httpClient.get<MovieData>(`https://api.themoviedb.org/3/discover/movie?api_key=3bab4ab26412e6bc2b95a0dee36e5833&language=it-it&primary_release_date.gte=${this.filterGteDate}&primary_release_date.lte=${this.filterLteDate}&sort_by=popularity.desc`)
+    .subscribe({
+      next: (res) => {
+        this.movies[index] = res;
+        console.log(res);
+      }
     });
   }
-
 }
