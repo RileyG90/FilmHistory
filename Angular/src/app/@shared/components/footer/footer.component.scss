@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
@@ -48,7 +49,7 @@ ul {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: #BF6C3B;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -78,7 +79,7 @@ ul {
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #DCE4F2;
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -88,14 +89,28 @@ ul {
 }
 
 .footer-col .social-links a:hover {
-    color: #24262b;
-    background-color: #ffffff;
+    background-color: #1B70A6;  
+}
+
+.footer-col .social-links .facebook-link {
+    background-image: url(../../../../assets/images/ic-facebook.svg);
+}
+
+.footer-col .social-links .twitter-link {
+    background-image: url(../../../../assets/images/ic_twitter.svg);
+}
+
+.footer-col .social-links .instagram-link {
+    background-image: url(../../../../assets/images/ic-instagram.svg);
+}
+
+.footer-col .social-links .linkedin-link {
+    background-image: url(../../../../assets/images/ic-linkedin.svg);
 }
 
 .pop-corn {
     width: 300px;
 }
-
 
 /*responsive*/
 
