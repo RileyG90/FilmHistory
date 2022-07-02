@@ -13,16 +13,14 @@ export class MovieComponent implements OnInit {
   filterGteDate: string = "2020-01-01";
   filterLteDate: string = "2021-12-31";
 
-  movies: Partial<MovieData> [] = [];
 
-  constructor(private httpClient: HttpClient, private movieApiService: MovieApiService) { }
+  constructor(private httpClient: HttpClient, private movieApiService: MovieApiService) {}
+
+  movies = this.movieApiService.movies;
 
   ngOnInit(): void {
-    for(let index = 0; index < 10; index++){
-      this.getMovieByDateRange(index);
-    }
-    
-
+    for(let index= 0; index < 10; index++)
+      this.movieApiService.getRandomMovie(index);
   }
 
   getMovieByDateRange(index: number){
