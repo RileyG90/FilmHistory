@@ -1,18 +1,22 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="main-timeline">
-                <div class="timeline">
-                    <a href="#" class="timeline-content">
-                        <div class="timeline-date">{{movie.release_date}}</div>
-                        <div class="timeline-icon"><i class="fa fa-globe"></i></div>
-                        <h3 class="title">{{ movie.title | titlecase }}</h3>
-                        <p class="description">
-                            {{movie.overview}}
-                        </p>
-                    </a>
+<section style="background-color: #F0F2F5;">
+    <div class="container py-5">
+        <div class="main-timeline-2">
+            <div class="timeline-2 left-2">
+                <div class="card">
+                    <div class="image">
+                        <img [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path" class="card-img-top" alt="Responsive image">
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="details">
+                            <div class="center">
+                                <h4 class="fw-bold ">{{ movie.title | titlecase }}</h4>
+                                <p class="text-muted "><i class="far fa-clock" aria-hidden="true"></i> {{ movie.release_date }}</p>
+                                <p>{{movie.overview}}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-  </div>
+</section>
