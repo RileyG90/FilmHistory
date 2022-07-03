@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <section class="title">
+            <h1>{{movie.title}}</h1>
+        </section>
+        <div class="info">
+            <span>{{movie.runtime}}min</span>
+            <span>{{movie.release_date}}</span>
+        </div>
+        <div class="overview">
+            {{movie.overview}}
+        </div>
+        <div class="info-aggiuntive">
+            <label>Genere:</label><span>{{movieGenre.name}}</span>
+            <label>Lingua originale:</label><span>{{movie.original_language}}</span>
+            <label>Produzione:</label><span>{{movieProductionCountry.name}}</span>
+        </div>
+        <div class="img">
+            <img src="`${{movie.poster_path}}`" alt="poster_path" />
+        </div>
+    </div>
+</div>

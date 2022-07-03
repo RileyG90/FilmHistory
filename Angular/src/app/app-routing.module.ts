@@ -9,6 +9,7 @@ import { WelcomeComponent } from "./components/welcome/welcome.component";
 import { ProfileComponent } from "./components/profile/profile.component";
 import { FavoritesComponent } from "./components/favorites/favorites.component";
 import { MovieComponent } from "./components/movie/movie.component";
+import { MovieDetailComponent } from "./components/movie-detail/movie-detail.component";
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: "home", component: WelcomeComponent },
       { path: "profile", component: ProfileComponent },
       { path: "favorites", component: FavoritesComponent },
+      { path: "detail/:movieId", component: MovieDetailComponent },
       { path: "", redirectTo: "home", pathMatch: 'full' },
     ],
   },

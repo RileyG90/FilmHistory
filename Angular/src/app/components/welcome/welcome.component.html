@@ -1,37 +1,32 @@
 <div class="container">
+    <div class="cont">
+        <div class="form sign-in">
+            <h2>Benvenuto,</h2>
+            <h4 style="display: flex;justify-content: center " class="py-3">Inserisci l'intervallo di tempo che hai scelto!</h4>
+            <label>
+      <span>Data di Inizio</span>
+            <input type="date" class="form-control" id="date-start" [(ngModel)]="filterGteDate" />
+            </label>
+            <label>
+                <span>Data di Fine</span>
+                 <input type="date" class="form-control" id="date-stop" [(ngModel)]="filterLteDate" />
+            </label>
+            <button type="submit" class="btn btn-primary" (click)="onFormSubmit()"><p>Invio</p></button>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                    <h2>Amante del cinema?</h2>
+                    <p>Cerca migliaia di film in esclusiva!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <div class="row mt-3">
-      <div class="col-12">
-        <h1>Benvenuto!</h1>
-        <h2>Inserisci l'intervallo di tempo che hai scelto</h2>
-      </div>
-    </div>
-  
-    <div class="row">
-      <div class="col-2">
-  
-        <div class="mb-3">
-          <label for="date-start" class="form-label">Data di Inizio</label>
-          <input type="date" class="form-control" id="date-start" [(ngModel)]="filterGteDate" />
-        </div>
-  
-        <div class="mb-3">
-          <label for="date-stop" class="form-label">Data di Fine</label>
-          <input type="date" class="form-control" id="date-stop" [(ngModel)]="filterLteDate" />
-        </div>
-  
-        <div class="mb-3">
-          <button type="submit" class="btn btn-primary" (click)="onFormSubmit()">Invio</button>
-        </div>
-  
-      </div>
-    </div>
-  
-    <div class="row" *ngIf="isMovieListRendered">
-      <div class="col-12">
+<div class="row" *ngIf="isMovieListRendered">
+    <div class="col-12">
         <tnv-movie [filterGteDate]="startDate" [filterLteDate]="endDate">
-  
         </tnv-movie>
-      </div>
     </div>
-  </div>
+</div>

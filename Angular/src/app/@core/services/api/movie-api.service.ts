@@ -33,4 +33,8 @@ export class MovieApiService {
       (`${this.TMDBUrlBase}${this.TMDBKey}&language=it-it&primary_release_date.gte=${firstDate}&primary_release_date.lte=${secondDate}&sort_by=popularity.desc`);
   }
 
+  getMovie(movieId: number) {
+    return this.httpClient.get<MovieData>(`https://api.themoviedb.org/3/movie/${movieId}?${this.TMDBKey}`);
+  }
+
 }

@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './@shared/components/footer/footer.component';
 import { MovieItemComponent } from './components/movie-item/movie-item.component';
 import { MovieComponent } from './components/movie/movie.component';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MovieComponent } from './components/movie/movie.component';
     FavoritesComponent,
     FooterComponent,
     MovieItemComponent,
-    MovieComponent
+    MovieComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,

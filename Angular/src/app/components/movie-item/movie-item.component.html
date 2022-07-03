@@ -9,9 +9,10 @@
                     <div class="card-body p-4">
                         <div class="details">
                             <div class="center">
-                                <h4 class="fw-bold ">{{ movie.title | titlecase }}</h4>
+                                <h4 class="fw-bold ">
+                                    <a href [routerLink]="['/detail', movie.id]">{{ movie.title | titlecase }}</a>
+                                </h4>
                                 <p class="text-muted "><i class="far fa-clock" aria-hidden="true"></i> {{ movie.release_date }}</p>
-                                <p>{{movie.overview}}</p>
                             </div>
                         </div>
                     </div>
