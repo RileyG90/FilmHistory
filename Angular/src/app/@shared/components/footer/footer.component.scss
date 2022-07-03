@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
@@ -49,7 +48,7 @@ ul {
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #BF6C3B;
+    background-color: #8C0343;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -65,13 +64,13 @@ ul {
     color: #ffffff;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
+    color: #BFBFBF;
     display: block;
     transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-    color: #ffffff;
+    color: #8C0335;
     padding-left: 8px;
 }
 
@@ -89,7 +88,7 @@ ul {
 }
 
 .footer-col .social-links a:hover {
-    background-color: #1B70A6;  
+    background-color: #231773;
 }
 
 .footer-col .social-links .facebook-link {
@@ -111,6 +110,7 @@ ul {
 .pop-corn {
     width: 300px;
 }
+
 
 /*responsive*/
 

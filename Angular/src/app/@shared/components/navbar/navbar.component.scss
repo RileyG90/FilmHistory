@@ -6,3 +6,12 @@
 .navbar-brand {
     margin-left: 20px;
 }
+
+.nav-item a:hover {
+    color: #8C0335;
+}
+
+.nav-item a:focus {
+    text-decoration: underline;
+    color: #8C0343;
+}

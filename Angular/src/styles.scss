@@ -1,19 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?&family=Roboto&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?&family=Roboto&display=swap');
 $primary: #1B70A6;
 $secondary: #5D7A8C;
-$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-sans-serif: 'Roboto',
+sans-serif;
+$background:#262626;
+$blu:#231773;
+$rosso:#8C0335;
+$fucsia:#8C0343;
+$grigio:#BFBFBF;
 
 /* Importing Bootstrap SCSS file. */
-@import "~bootstrap/scss/bootstrap";
 
+@import "~bootstrap/scss/bootstrap";
 label {
-  text-transform: uppercase;
-  font-size: small;
-  font-weight: bold;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
 }
 
 ngb-rating {
-  color: $primary;
+    color: $primary;
 }
