@@ -196,8 +196,9 @@
     transition: .5s;
     transform-origin: left;
     transform: perspective(2000px) rotateY(-90deg);
-    overflow: scroll;
-    overflow-x: hidden;
+    max-height: 500px;
+    //overflow: auto;
+    // overflow-x: hidden;
 }
 
 .card:hover .details {
@@ -211,6 +212,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    max-height: 400px;
+    overflow: auto;
 }
 
 .card .details .center h1 {
