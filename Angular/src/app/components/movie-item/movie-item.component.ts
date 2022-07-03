@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MovieData } from 'src/app/models/movieData';
+import { Genre, MovieData } from 'src/app/models/movieData';
 
 @Component({
   selector: 'tnv-movie-item',
