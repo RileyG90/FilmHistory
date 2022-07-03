@@ -38,7 +38,7 @@
     top: 0;
 }
 
-.main-timeline .timeline-year {
+.main-timeline .timeline-date {
     color: #00A7FB;
     font-size: 40px;
     font-weight: 700;
@@ -90,7 +90,7 @@
     right: 139px;
 }
 
-.main-timeline .timeline:nth-child(even) .timeline-year {
+.main-timeline .timeline:nth-child(even) .timeline-date {
     left: auto;
     right: 19px;
 }
@@ -104,7 +104,7 @@
     background-color: #FF3E7D;
 }
 
-.main-timeline .timeline:nth-child(4n+2) .timeline-year {
+.main-timeline .timeline:nth-child(4n+2) .timeline-date {
     color: #FF3E7D;
 }
 
@@ -112,7 +112,7 @@
     background-color: #7338BA;
 }
 
-.main-timeline .timeline:nth-child(4n+3) .timeline-year {
+.main-timeline .timeline:nth-child(4n+3) .timeline-date {
     color: #7338BA;
 }
 
@@ -120,7 +120,7 @@
     background-color: #FF9800;
 }
 
-.main-timeline .timeline:nth-child(4n+4) .timeline-year {
+.main-timeline .timeline:nth-child(4n+4) .timeline-date {
     color: #FF9800;
 }
 
@@ -144,8 +144,8 @@
         right: auto;
         top: 80px;
     }
-    .main-timeline .timeline-year,
-    .main-timeline .timeline:nth-child(even) .timeline-year {
+    .main-timeline .timeline-date,
+    .main-timeline .timeline:nth-child(even) .timeline-date {
         transform: translateY(0) translateX(-50%);
         left: 50%;
         right: auto;
