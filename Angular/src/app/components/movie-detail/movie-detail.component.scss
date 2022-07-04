@@ -1,0 +1,37 @@
+.movie-card {
+    background-color: #fff;
+    width: 100%;
+    max-width: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 5px 0px #888;
+    margin: 0px 5px;
+    min-height: 350px;
+    cursor: pointer;
+}
+
+.movie-img {
+    max-height: 40em;
+    overflow: hidden;
+}
+
+.movie-img img {
+    width: 100%;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.movie-title {
+    font-size: 20px;
+}
+
+.movie-intro {
+    font-size: 16px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
