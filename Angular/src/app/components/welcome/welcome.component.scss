@@ -1,44 +1,14 @@
-@import url(../../../styles.scss);
-.btn {
-    display: flex;
-    color: white;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border: white 1px solid;
-    border-radius: 30%;
-    margin-top: 30px;
-    opacity: 0;
-    animation-name: btn;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    transition-property: transform;
-    transition-duration: 1s;
-    background-color: #8C0343;
-    p {
-        margin-left: 80px;
-    }
-}
-
-.btn:hover {
-    transform: rotateY(360deg);
-}
-
-@keyframes btn {
-    0% {
-        opacity: 0
-    }
-    100% {
-        opacity: 1
-    }
-}
-
 *,
 *:before,
 *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #ededed;
 }
 
 input,
@@ -175,6 +145,52 @@ button {
             }
         }
     }
+    &__btn {
+        overflow: hidden;
+        z-index: 2;
+        position: relative;
+        width: 100px;
+        height: $btnH;
+        margin: 0 auto;
+        background: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 15px;
+        cursor: pointer;
+        &:after {
+            content: '';
+            z-index: 2;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #fff;
+            border-radius: 30px;
+        }
+        span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            transition: transform $switchAT;
+            &.m--in {
+                transform: translateY($btnH*-2);
+                @include signUpActive {
+                    transform: translateY(0);
+                }
+            }
+            &.m--up {
+                @include signUpActive {
+                    transform: translateY($btnH*2);
+                }
+            }
+        }
+    }
 }
 
 h2 {
@@ -215,7 +231,7 @@ input {
 .submit {
     margin-top: 40px;
     margin-bottom: 20px;
-    background: #d4af7a;
+    background: #8C0343;
     text-transform: uppercase;
 }
 
