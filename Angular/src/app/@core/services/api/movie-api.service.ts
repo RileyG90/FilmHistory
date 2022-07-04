@@ -34,7 +34,7 @@ export class MovieApiService {
   }
 
   getMovie(movieId: number) {
-    return this.httpClient.get<MovieData>(`https://api.themoviedb.org/3/movie/${movieId}?${this.TMDBKey}`);
+    return this.httpClient.get<MovieData>(`https://api.themoviedb.org/3/movie/${movieId}?${this.TMDBKey}&language=it-it`);
   }
 
 }
