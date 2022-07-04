@@ -4,9 +4,6 @@ import { Router } from "@angular/router";
 import { of } from "rxjs";
 import { LoginDTO, RegisterDTO, User } from "src/app/models/user";
 
-const TOKEN_KEY = 'auth-token';
-const USER_KEY = 'auth-user';
-
 @Injectable({
   providedIn: "root",
 })
@@ -17,8 +14,7 @@ export class AuthService {
   constructor(private router: Router, private httpClient: HttpClient) {}
 
   login(loginData: LoginDTO) {
-    // TODO Chiamare il servizio per l'autenticazione e salvare l'utente corrente nel localStorage
-    //const headers = new HttpHeaders({Authoirization: 'Basic' + btoa(loginData.username+":"+loginData.password)})
+    //TODO Chiamare il servizio per l'autenticazione e salvare l'utente corrente nel localStorage
     const httpOptions = {
         headers: new HttpHeaders({
           'Content-Type': 'application/json',
@@ -26,10 +22,10 @@ export class AuthService {
         })
       };
       
-      const response: User = {
+      const response: Partial<LoginDTO> = {
         name: "Paolino",
         surname: "Paperino",
-        username: `${loginData.username}`
+        username: `${loginData.username}`,
       };
     
     localStorage.setItem("user", JSON.stringify(response));
