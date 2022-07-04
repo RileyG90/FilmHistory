@@ -10,7 +10,7 @@ import { Genre, MovieData, ProductionCompany, ProductionCountry } from 'src/app/
 })
 export class MovieDetailComponent implements OnInit {
   movie: Partial<MovieData> = {};
-  movieGenre: Partial<Genre> = {};
+  movieGenre: Partial<Genre> [] = [];
   movieProductionCompany: Partial<ProductionCompany> = {};
   movieProductionCountry: Partial<ProductionCountry> = {};
 
