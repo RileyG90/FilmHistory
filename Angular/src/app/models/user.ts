@@ -7,6 +7,8 @@ export interface User {
 export interface LoginDTO {
   username: string;
   password: string;
+  name: string;
+  surname: string;
 }
 
 export interface RegisterDTO {

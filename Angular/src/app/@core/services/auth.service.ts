@@ -21,31 +21,26 @@ export class AuthService {
     //const headers = new HttpHeaders({Authoirization: 'Basic' + btoa(loginData.username+":"+loginData.password)})
     const httpOptions = {
         headers: new HttpHeaders({
+          'Content-Type': 'application/json',
           'Authorization': 'Basic ' + btoa(loginData.username+":"+loginData.password)
         })
       };
-      this.httpClient.get<string>(`${this.springbootBaseUrl}/username/${loginData.username}/password/${loginData.password}`, httpOptions);
-    
-    
+      
       const response: User = {
         name: "Paolino",
         surname: "Paperino",
         username: `${loginData.username}`
       };
-
     
     localStorage.setItem("user", JSON.stringify(response));
-
     
-
-    return of('login ok');
+    return this.httpClient.get<LoginDTO>(`${this.springbootBaseUrl}/username/${loginData.username}/password/${loginData.password}`, httpOptions);
+    //return of('login ok');
   }
 
   register(registerData: Partial<RegisterDTO>) {
     // TODO Chiamare il servizio per la registrazione e redirigere l'utente alla root per il login
-    return this.httpClient.post<string>(`${this.springbootBaseUrl}/`, registerData);
-    //this.router.navigateByUrl("/");
-    //`${this.springbootBaseUrl}`
+    return this.httpClient.post<LoginDTO>(`${this.springbootBaseUrl}/`, registerData);
   }
 
   logout() {
