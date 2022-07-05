@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Rating, RatingsApiResponse, Rating_NewEntry } from 'src/app/models/rating';
+import { Rating } from 'src/app/models/rating';
 
 
 @Injectable({
@@ -12,19 +12,19 @@ export class RatingApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  createNewRating(rating: Rating_NewEntry){
-    return this.httpClient.post<Rating_NewEntry>(`${this.nodeBaseUrl}/rating`, rating);
+  getRating(userId: number, movieId: number){
+    return this.httpClient.get<Rating>(`${this.nodeBaseUrl}/rating/${userId}/${movieId}`);
   }
 
-  getRatingsByUserIdMovieId(user_id: number, movie_id: number){
-    return this.httpClient.get<RatingsApiResponse>(`${this.nodeBaseUrl}/rating/${user_id}/${movie_id}`);
+  createRating(rating: Partial<Rating>){
+    return this.httpClient.post<Rating>(`${this.nodeBaseUrl}/rating`, rating); 
   }
 
-  deleteRatingById(rating_id: number){
-    return this.httpClient.delete<Rating>(`${this.nodeBaseUrl}/rating/${rating_id}`);
+  updateRating(userId: number, rating: Partial<Rating>){
+    return this.httpClient.patch<Rating>(`${this.nodeBaseUrl}/rating/${userId}/`, rating);
   }
 
-  updateRatingById(rating_id: number, rating : Partial<Rating>){
-    return this.httpClient.patch<Rating>(`${this.nodeBaseUrl}/rating/${rating_id}`, rating);
+  deleteRating(userId: number){
+    return this.httpClient.delete<Rating>(`${this.nodeBaseUrl}/rating/${userId}/`);
   }
 }
