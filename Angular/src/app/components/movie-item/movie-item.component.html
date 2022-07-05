@@ -3,6 +3,8 @@
   <div class="card-body">
       <a href [routerLink]="['/detail', movie.id]">{{ movie.title | titlecase }}</a>
     <p class="card-text">{{ movie.release_date | date: 'd MMM y' }}</p>
-    <a href="#" class="btn btn-primary">Add Preferiti</a>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <button type="submit" *ngIf="onSubmit" class="btn btn-primary">Add Preferiti</button>
+    </form>
   </div>
 </div>

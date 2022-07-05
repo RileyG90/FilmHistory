@@ -1,8 +1,8 @@
-import FavoriteMovies from "../models/favorite-movies.js";
+import FavouriteMovie from "../models/favourite-movie.js";
 
 export const getFavorite = async (req, res) => {
     try {
-        const favorite = await FavoriteMovies.findOne({
+        const favorite = await FavouriteMovie.findOne({
             where: {
                 userId: req.params.userId,
                 movieId: req.params.movieId,
@@ -22,7 +22,7 @@ export const getFavorite = async (req, res) => {
 
 export const createFavorite = async (req, res) => {
     try {
-        const favorite = await FavoriteMovies.create(req.body);
+        const favorite = await FavouriteMovie.create(req.body);
         console.log(req.body)
         res.json({
             "message": "Favorite Created",
@@ -36,7 +36,7 @@ export const createFavorite = async (req, res) => {
 
 export const deleteFavorite = async (req, res) => {
     try {
-        await FavoriteMovies.destroy({
+        await FavouriteMovie.destroy({
             where: {
                 id: req.params.id
             }

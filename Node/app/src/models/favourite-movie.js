@@ -3,7 +3,7 @@ import db from "../../config/config.js";
  
 const { DataTypes } = Sequelize;
 
-const FavoriteMovies = db.define('favorites', {
+const FavouriteMovie = db.define('favourites', {
   userId: {
     type: DataTypes.INTEGER
   },
@@ -14,4 +14,4 @@ const FavoriteMovies = db.define('favorites', {
   freezeTableName: true
 });
  
-export default FavoriteMovies;
+export default FavouriteMovie;

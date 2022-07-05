@@ -1,5 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Genre, MovieData } from 'src/app/models/movieData';
+import { NgForm } from '@angular/forms';
+import { FavouriteApiService } from 'src/app/@core/services/api/favourite-api.service';
+import { FavouriteMovie } from 'src/app/models/favouriteMovie';
+import { MovieData } from 'src/app/models/movieData';
 
 @Component({
   selector: 'tnv-movie-item',
@@ -9,10 +12,20 @@ import { Genre, MovieData } from 'src/app/models/movieData';
 export class MovieItemComponent implements OnInit {
 
   @Input () movie: Partial<MovieData> = {};
+  @Input () favourite: Partial<FavouriteMovie> = {};
 
-  constructor() { }
+  constructor(private favouriteApiService: FavouriteApiService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  onSubmit(form: NgForm) {
+    form.control.markAllAsTouched();
+    if(form.valid){
+        this.favouriteApiService.createFavourite(form.value).subscribe({
+        next: (res) => {
+        console.log(res);
+        },
+      });
+    }
   }
-
 }
