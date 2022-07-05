@@ -21,8 +21,10 @@ export class AuthService {
           'Authorization': 'Basic ' + btoa(loginData.username+":"+loginData.password)
         })
       };
+
+      return this.httpClient.get<Partial<LoginDTO>>(`${this.springbootBaseUrl}/username/${loginData.username}/password/${loginData.password}`, httpOptions);
       
-      const response: Partial<LoginDTO> = {
+    /*  const response: Partial<LoginDTO> = {
         name: "Paolino",
         surname: "Paperino",
         username: `${loginData.username}`,
@@ -30,8 +32,14 @@ export class AuthService {
     
     localStorage.setItem("user", JSON.stringify(response));
     
-    return this.httpClient.get<LoginDTO>(`${this.springbootBaseUrl}/username/${loginData.username}/password/${loginData.password}`, httpOptions);
-    //return of('login ok');
+    
+    return of('login ok');*/
+  }
+
+  saveUser(loginData: Partial<LoginDTO>){
+    localStorage.setItem("user", JSON.stringify(loginData));
+
+    return of('login ok');
   }
 
   register(registerData: Partial<RegisterDTO>) {

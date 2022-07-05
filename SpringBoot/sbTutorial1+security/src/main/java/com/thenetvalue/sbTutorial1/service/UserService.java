@@ -14,7 +14,8 @@ import java.util.List;
 @Service
 public class UserService {
     UserRepositoryDAO userDAO;
-    PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+    @Autowired
+    PasswordEncoder passwordEncoder;
 
     @Autowired
     public UserService(@Qualifier("dbUserDAO") UserRepositoryDAO userDAO) {
@@ -43,7 +44,6 @@ public class UserService {
         user.setEnabled(true);
         userDAO.save(user);
         return user;
-
     }
 
     public User findUserByUsername(String username) {
@@ -58,9 +58,14 @@ public class UserService {
         return userDAO.findByUsernameContains(username);
     }
 
-    public Iterable<User> getUserByUsernameAndPassword(String username, String password) {
-        Iterable<User> resultUser = userDAO.findByUsernameAndPassword(username, password);
-        return resultUser;
+    public User getUserByUsernameAndPassword(String username, String password) {
+        Iterable<User> resultUsers = userDAO.findByUsername(username);
+        for (User user : resultUsers) {
+            if(passwordEncoder.matches(password, user.getPassword())) {
+                return user;
+            }
+        }
+        return null;
     }
 
     public Iterable<User> allUsers() {
