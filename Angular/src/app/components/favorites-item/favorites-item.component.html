@@ -3,6 +3,10 @@
     <div class="card-body">
         <a href [routerLink]="['/detail', movie.id]">{{ movie.title | titlecase }}</a>
         <p class="card-text">{{ movie.release_date | date: 'd MMM y' }}</p>
+        <td class=""><ngb-rating [(rate)]="starRating" [max]="5" ></ngb-rating></td>
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+            <button type="submit" *ngIf="onSubmit" class="btn btn-primary">Add Recensione</button>
+          </form>
         
     </div>
   </div>
