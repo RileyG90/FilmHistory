@@ -23,10 +23,11 @@ export class MovieComponent implements OnInit, OnChanges {
     this.movieApiService.getMovieByDateRange(changes['filterGteDate'].currentValue, changes['filterLteDate'].currentValue).subscribe(
       response => {
         this.movies = response.results.slice(0, 10);
+        console.log(this.movies);
       });   
   }
 
-  ngOnInit(): void { 
+  ngOnInit(): void {
   }
 
 }
