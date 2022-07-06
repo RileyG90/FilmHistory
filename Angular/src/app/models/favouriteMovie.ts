@@ -1,4 +1,4 @@
 export interface FavouriteMovie {
-    userId: number;
+    userId?: number;
     movieId: number;
 }

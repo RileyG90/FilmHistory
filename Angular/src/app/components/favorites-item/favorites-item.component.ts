@@ -16,21 +16,14 @@ export class FavoritesItemComponent implements OnInit {
 
   currentUser: Partial<User> = {};
 
-  movieIdList: Partial<FavouriteMovie>[] = [];
-  movieList: Partial<MovieData>[] = [];
-  filteredMovieList: Partial<MovieData>[] = [];
+  
 
   constructor(private authService: AuthService, private favouriteApiService: FavouriteApiService) { }
 
   ngOnInit(): void {
-    this.currentUser = this.authService.getCurrentUser();
-    this.getAllFavourite;
+    
   }
 
-  getAllFavourite(){
-    this.favouriteApiService.getFavouriteList().subscribe({
-      next: (res) => console.log(res)
-    });
-  }
+  
 
 }
