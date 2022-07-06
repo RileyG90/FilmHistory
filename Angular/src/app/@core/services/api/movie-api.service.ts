@@ -15,6 +15,8 @@ export class MovieApiService {
   TMDBKey: string = "api_key=3bab4ab26412e6bc2b95a0dee36e5833";
   urlPosterIMG: string = "https://image.tmdb.org/t/p/original/"
 
+  movies: Partial<MovieData>[] = [];
+
 
 
 
