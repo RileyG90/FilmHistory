@@ -23,7 +23,7 @@ export class FavoritesComponent implements OnInit {
   }
 
   getFavouriteList(){
-    this.favouriteApiService.getFavouriteList(){
+    this.favouriteApiService.getFavouriteList();{
 
 
     }
