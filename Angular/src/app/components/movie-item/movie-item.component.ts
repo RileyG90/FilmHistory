@@ -22,14 +22,18 @@ export class MovieItemComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentUser = this.authService.getCurrentUser();
-    
+    console.log(this.currentUser.id);
+    console.log(this.movie.id);
   }
 
   onSubmit(form: NgForm) {
-        this.favouriteApiService.createFavourite({userId: this.currentUser.id, movieId: this.movie.id}).subscribe({
+    form.control.markAllAsTouched();
+    if(form.valid){
+        this.favouriteApiService.createFavourite(form.value).subscribe({
         next: (res) => {
         console.log(res);
         },
       });
     }
   }
+}
