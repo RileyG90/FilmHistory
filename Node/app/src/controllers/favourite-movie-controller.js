@@ -20,6 +20,19 @@ export const getFavorite = async (req, res) => {
     }
 }
 
+export const getFavoriteListByUserId = async (req, res) => {
+    try {
+        const favorite = await FavouriteMovie.findAll({
+            where: {
+                userId: req.params.userId
+            }
+        }); 
+        res.send(favorite);
+    } catch (err) {
+        console.log(err);
+    }
+}
+
 export const createFavorite = async (req, res) => {
     try {
         const favorite = await FavouriteMovie.create(req.body);

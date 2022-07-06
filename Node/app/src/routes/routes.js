@@ -4,7 +4,7 @@ import express from "express";
 const API_ROOT = '/api';
 
 import { getRating, createRating, updateRating, deleteRating } from "../controllers/ratings-controller.js";
-import { createFavorite, deleteFavorite, getFavorite } from "../controllers/favourite-movie-controller.js";
+import { createFavorite, deleteFavorite, getFavorite, getFavoriteListByUserId } from "../controllers/favourite-movie-controller.js";
 
 
 const router = express.Router();
@@ -16,5 +16,6 @@ router.delete(`${API_ROOT}/rating/:id`, deleteRating);
 router.get(`${API_ROOT}/favourite/:userId/:movieId`, getFavorite);
 router.post(`${API_ROOT}/favourite`, createFavorite);
 router.delete(`${API_ROOT}/favourite/:id`, deleteFavorite);
+router.get(`${API_ROOT}/favourite/:id`, getFavoriteListByUserId);
 
 export default router;
