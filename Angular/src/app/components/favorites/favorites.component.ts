@@ -25,7 +25,7 @@ export class FavoritesComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentUser = this.authService.getCurrentUser();
+
   }
-  
 
 }
