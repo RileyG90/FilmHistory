@@ -25,13 +25,10 @@ export class MovieItemComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    form.control.markAllAsTouched();
-    if(form.valid){
-        this.favouriteApiService.createFavourite(form.value).subscribe({
+    this.favouriteApiService.createFavourite({userId: this.currentUser.id, movieId: this.movie.id}).subscribe({
         next: (res) => {
         console.log(res);
         },
       });
     }
-  }
 }
