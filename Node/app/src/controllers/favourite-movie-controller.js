@@ -22,7 +22,11 @@ export const getFavorite = async (req, res) => {
 
 export const getAllFavorite = async (req, res) => {
     try {
-        const favorite = await FavouriteMovie.findAll();
+        const favorite = await FavouriteMovie.findAll({
+            where: {
+              userId: req.params.userId,
+            }
+          });
         
         if (favorite) {
             res.send(favorite);
