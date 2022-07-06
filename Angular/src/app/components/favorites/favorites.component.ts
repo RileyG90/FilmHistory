@@ -16,11 +16,11 @@ export class FavoritesComponent implements OnInit {
   @Input() movie: Partial<MovieData> = {};
   
   
+  
   currentUser: Partial<User> = {};
 
   movieUserIdList: Partial<FavouriteMovie>[] = [];
   movieList: Partial<MovieData>[] = [];
-  filteredMovieList: Partial<MovieData>[] = [];
 
   constructor(
     private favouriteApiService: FavouriteApiService, 
@@ -31,9 +31,10 @@ export class FavoritesComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentUser = this.authService.getCurrentUser();
+    this.getAllFavorite();
   }
 
-  /* getAllFavorite(){
+  getAllFavorite(){
     const userId = this.currentUser.id;
     this.favouriteApiService.getFavouriteList(userId).subscribe({
       next: (res: FavouriteMovie[]) => {
@@ -42,11 +43,15 @@ export class FavoritesComponent implements OnInit {
 
         for(let i = 0; i < this.movieUserIdList.length; i++) {
           let movieId = this.movieUserIdList[i].movieId
-          this.movieApiService.getMovie(movieId).subscribe
-          }
-          
+          this.movieApiService.getMovie(movieId).subscribe({
+            next: (res) => {
+              this.movieList[i] = res;
+              console.log(res);
+            
+          }})
+          }   
         }
       });
-    }*/
+    }
   
   }

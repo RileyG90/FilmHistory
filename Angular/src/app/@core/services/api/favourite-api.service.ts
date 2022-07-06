@@ -7,6 +7,7 @@ import { FavouriteMovie } from 'src/app/models/favouriteMovie';
 })
 export class FavouriteApiService {
 
+
   nodeBaseUrl: string = 'http://localhost:1234/api';
 
   constructor(private httpClient : HttpClient) { }
@@ -15,7 +16,7 @@ export class FavouriteApiService {
     return this.httpClient.get<FavouriteMovie>(`${this.nodeBaseUrl}/favourite/${userId}/${movieId}`);
   }
 
-  getFavouriteList(userId: number){
+  getFavouriteList(userId: number | undefined){
     return this.httpClient.get<FavouriteMovie[]>(`${this.nodeBaseUrl}/favourite/${userId}`);
   }
 
