@@ -16,7 +16,17 @@ export class MovieItemComponent implements OnInit {
 
   constructor(private favouriteApiService: FavouriteApiService) { }
 
+<<<<<<< HEAD
   ngOnInit(): void {}
+=======
+  constructor(private favouriteApiService: FavouriteApiService, private authService: AuthService) { }
+
+  ngOnInit(): void {
+    this.currentUser = this.authService.getCurrentUser();
+    console.log(this.currentUser.id);
+    console.log(this.movie.id);
+  }
+>>>>>>> parent of 59f0b07 (fix salvataggio favorite nel db node)
 
   onSubmit(form: NgForm) {
     form.control.markAllAsTouched();
