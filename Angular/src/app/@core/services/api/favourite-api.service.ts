@@ -15,12 +15,12 @@ export class FavouriteApiService {
     return this.httpClient.get<FavouriteMovie>(`${this.nodeBaseUrl}/favourite/${userId}/${movieId}`);
   }
 
-  createFavourite(rating: Partial<FavouriteMovie>){
-    return this.httpClient.post<FavouriteMovie>(`${this.nodeBaseUrl}/favourite`, rating); 
+  createFavourite(favourite: Partial<FavouriteMovie>){
+    return this.httpClient.post<FavouriteMovie>(`${this.nodeBaseUrl}/favourite`, favourite); 
   }
 
-  updateFavourite(userId: number, rating: Partial<FavouriteMovie>){
-    return this.httpClient.patch<FavouriteMovie>(`${this.nodeBaseUrl}/favourite/${userId}/`, rating);
+  updateFavourite(userId: number, favourite: Partial<FavouriteMovie>){
+    return this.httpClient.patch<FavouriteMovie>(`${this.nodeBaseUrl}/favourite/${userId}/`, favourite);
   }
 
 }
