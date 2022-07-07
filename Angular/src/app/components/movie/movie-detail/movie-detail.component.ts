@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { CommentApiService } from 'src/app/@core/services/api/comment-api.service';
 import { MovieApiService } from 'src/app/@core/services/api/movie-api.service';
 import { AuthService } from 'src/app/@core/services/auth.service';
+import { Comment } from 'src/app/models/comment';
 import { MovieData } from 'src/app/models/movieData';
 import { User } from 'src/app/models/user';
 
@@ -14,7 +15,7 @@ import { User } from 'src/app/models/user';
 })
 export class MovieDetailComponent implements OnInit {
   
-
+  commentList: Partial<Comment> = {};
   movie: Partial<MovieData> = {};
   currentUser: Partial<User> = {};
   now = new Date()
@@ -34,11 +35,22 @@ export class MovieDetailComponent implements OnInit {
       next: (response) => (this.movie = response),
       error: (err) => console.log('movie non trovato!'),
     });
+
+    this.getCommentsList();
   }
 
   onSubmit(form: NgForm) {
     this.commentApiService.createComment({ user_Id: this.currentUser.id, movie_Id: this.movie.id, comment: form.controls['comment'].value}).subscribe({
        next: (res) => console.log(res)
+    });
+  }
+
+  getCommentsList(){
+    this.commentApiService.getAllComment().subscribe({
+      next: (res) => {
+        this.commentList = res;
+        console.log(this.commentList);
+      }
     });
   }
 }

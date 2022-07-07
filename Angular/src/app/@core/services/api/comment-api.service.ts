@@ -15,7 +15,7 @@ export class CommentApiService {
     return this.httpClient.get<Comment>(`${this.dotnetBaseUrl}`);
   }
 
-  getCommentByIdComment(idComment: number){
+  getCommentByIdComment(idComment: number | undefined){
     return this.httpClient.get<Comment>((`${this.dotnetBaseUrl}/${idComment}`));
   }
 

@@ -18,7 +18,6 @@ import { MovieItemComponent } from './components/movie/movie-item/movie-item.com
 import { MovieComponent } from './components/movie/movie.component';
 import { MovieDetailComponent } from './components/movie/movie-detail/movie-detail.component';
 import { FavoritesItemComponent } from './components/favorites/favorites-item/favorites-item.component';
-import { GetCommentComponent } from './components/comments/get-comment/get-comment.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +35,6 @@ import { GetCommentComponent } from './components/comments/get-comment/get-comme
     MovieComponent,
     MovieDetailComponent,
     FavoritesItemComponent,
-    GetCommentComponent
   ],
   imports: [
     BrowserModule,

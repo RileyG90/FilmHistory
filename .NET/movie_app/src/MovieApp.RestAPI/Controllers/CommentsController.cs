@@ -37,7 +37,7 @@ namespace MovieApp.RestAPI.Controllers
             try
             {
 
-                var comment = _applicationManager.GetAllComments().First(com => com.Id == commentId);
+                var comment = _applicationManager.GetAllComments().First(com => com.Movie_Id == commentId);
                 return Ok(CommentMapper.From(comment));
             }
             catch (Exception ex)
@@ -95,7 +95,7 @@ namespace MovieApp.RestAPI.Controllers
         }
 
         [EnableCors("Policy1")]
-        [HttpPost]
+        [HttpPatch]
         public ActionResult<CommentContract> CreateNewComment([FromBody] Comments newComment)
         {
             try

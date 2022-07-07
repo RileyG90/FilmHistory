@@ -1,3 +1,4 @@
+<!-- MOVIE CARD -->
 <div class="movie-card">
     <div class="movie-img">
         <img [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path" alt="poster_path" />
@@ -14,6 +15,8 @@
     
 
 </div>
+
+<!-- CREATE COMMENT -->
 <section style="background-color: #eee;">
     <div class="container my-5 py-5">
       <div class="row d-flex justify-content-center">
@@ -35,6 +38,8 @@
 
             </div>
             
+            
+
             <div class="card-footer py-3 border-0" style="background-color: #f8f9fa;">
                 
                 <form #f="ngForm" (ngSubmit)="onSubmit(f)">
@@ -75,5 +80,9 @@
       </div>
     </div>
   </section>
+
+  <!-- COMMENT LIST -->
+
+  
 
 
