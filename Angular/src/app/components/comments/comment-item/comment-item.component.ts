@@ -18,13 +18,8 @@ export class CommentItemComponent implements OnInit {
   
 
   movie: Partial<MovieData> = {};
-  id: string = "";
-
-
 
   currentUser: Partial<User> = {};
-
-  commentCreated: Partial<Comment>[] = [];
 
   constructor(
     private authService: AuthService, 
