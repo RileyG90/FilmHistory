@@ -19,14 +19,10 @@ export class FavoritesItemComponent implements OnInit {
 
   currentUser: Partial<User> = {};
 
-  
-
   constructor(private authService: AuthService, private favouriteApiService: FavouriteApiService) { }
 
   ngOnInit(): void {
     this.currentUser = this.authService.getCurrentUser();
   }
-
- 
 
 }

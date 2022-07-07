@@ -7,7 +7,6 @@ import { FavouriteMovie } from 'src/app/models/favouriteMovie';
 })
 export class FavouriteApiService {
 
-
   nodeBaseUrl: string = 'http://localhost:1234/api';
 
   constructor(private httpClient : HttpClient) { }
@@ -29,4 +28,3 @@ export class FavouriteApiService {
   }
 
 }
-
