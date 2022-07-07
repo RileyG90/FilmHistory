@@ -12,3 +12,32 @@
         <p class="movie-intro">{{movie.overview}} </p>
     </div>
 </div>
+
+<!--Input form-->
+<div ng-app="comments" ng-controller="commentsCtrl">
+    <ul>
+        <li ng-repeat="comment in comments">
+            <header>
+                <h1 ng-if="comment.author.website.length == 0" ng-class="{ author: isAuthor(comment.author.email) }">
+                    <!--{{ comment.author.name }}-->
+                </h1>
+                <h1 ng-if="comment.author.website.length > 0" ng-class="{ author: isAuthor(comment.author.email) }">
+                    <!--<a ng-href="//{{ comment.author.website }}">{{ comment.author.name }}</a>--></h1>
+                <!--<img ng-src="{{ getGravatar(comment.author.email) }}">-->
+                <div>
+                    <button ng-click="love(comment.id)" ng-class="{ loved: comment.loved }"></button>
+                    <button ng-click="reply(comment.author.name)"></button>
+                </div>
+            </header>
+            <p ng-bind-html="parseContent(comment.content)"></p>
+        </li>
+    </ul>
+    <form name="form" ng-submit="addNewComment()" novalidate>
+        <input placeholder="First and second name" type="text" ng-model="newComment.author.name" required>
+        <textarea placeholder="Comment" ng-model="newComment.content" required></textarea>
+        <input type="text" placeholder="Email" ng-pattern="/^.+@.+\.[a-z]+$/" ng-model="newComment.author.email" required>
+        <input type="text" placeholder="Website" ng-pattern="/^.+\.[a-z]+$/" ng-model="newComment.author.website">
+        <!-- <img id="newCommentAvatar" ng-src="{{ getGravatar(newComment.author.email) }}">-->
+        <button type="submit">Add comment</button>
+    </form>
+</div>
