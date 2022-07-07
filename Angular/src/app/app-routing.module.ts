@@ -8,7 +8,6 @@ import { WelcomeComponent } from "./components/welcome/welcome.component";
 import { ProfileComponent } from "./components/profile/profile.component";
 import { FavoritesComponent } from "./components/favorites/favorites.component";
 import { MovieDetailComponent } from "./components/movie/movie-detail/movie-detail.component";
-import { CommentItemComponent } from "./components/comments/comment-item/comment-item.component";
 
 const routes: Routes = [
   {
@@ -26,10 +25,6 @@ const routes: Routes = [
   {
     path: "login",
     component: LoginComponent,
-  },
-  {
-    path: "comment-item",
-    component: CommentItemComponent,
   },
   {
     path: "register",
