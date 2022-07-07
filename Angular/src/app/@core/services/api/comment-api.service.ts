@@ -24,7 +24,7 @@ export class CommentApiService {
   }
 
   createComment(comment: Partial <Comment>) {
-    return this.httpClient.post<Comment>((`${this.dotnetBaseUrl}`), comment);
+    return this.httpClient.patch<Comment>((`${this.dotnetBaseUrl}`), comment);
   }
   
 }

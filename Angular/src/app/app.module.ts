@@ -18,6 +18,7 @@ import { MovieItemComponent } from './components/movie/movie-item/movie-item.com
 import { MovieComponent } from './components/movie/movie.component';
 import { MovieDetailComponent } from './components/movie/movie-detail/movie-detail.component';
 import { FavoritesItemComponent } from './components/favorites/favorites-item/favorites-item.component';
+import { AddCommentItemComponent } from './components/add-comment-item/add-comment-item.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FavoritesItemComponent } from './components/favorites/favorites-item/fa
     MovieComponent,
     MovieDetailComponent,
     FavoritesItemComponent,
+    AddCommentItemComponent,
   ],
   imports: [
     BrowserModule,

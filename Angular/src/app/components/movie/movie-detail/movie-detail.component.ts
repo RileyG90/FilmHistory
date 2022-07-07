@@ -39,12 +39,6 @@ export class MovieDetailComponent implements OnInit {
     this.getCommentsList();
   }
 
-  onSubmit(form: NgForm) {
-    this.commentApiService.createComment({ user_Id: this.currentUser.id, movie_Id: this.movie.id, comment: form.controls['comment'].value}).subscribe({
-       next: (res) => console.log(res)
-    });
-  }
-
   getCommentsList(){
     this.commentApiService.getAllComment().subscribe({
       next: (res) => {
