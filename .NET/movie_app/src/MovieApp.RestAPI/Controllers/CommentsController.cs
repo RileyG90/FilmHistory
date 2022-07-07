@@ -37,7 +37,7 @@ namespace MovieApp.RestAPI.Controllers
             try
             {
 
-                var comment = _applicationManager.GetAllComments().First(com => com.Movie_Id == commentId);
+                var comment = _applicationManager.GetAllComments().First(com => com.Id == commentId);
                 return Ok(CommentMapper.From(comment));
             }
             catch (Exception ex)
