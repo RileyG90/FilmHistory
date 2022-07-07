@@ -2,16 +2,19 @@
     <div class="cont">
         <div class="form sign-in">
             <h2>Benvenuto</h2>
-            <h4 style="display: flex;justify-content: center " class="py-3">Inserisci l'intervallo di tempo che hai scelto!</h4>
+            <h4 style="display: flex;justify-content: center " class="py-3">
+                Inserisci l'intervallo di tempo che hai scelto!</h4>
             <label>
-      <span>Data di Inizio</span>
-            <input type="date" class="form-control" id="date-start" [(ngModel)]="filterGteDate" />
+                <span>Data di Inizio</span>
+                <input type="date" class="form-control" id="date-start" [(ngModel)]="filterGteDate" />
             </label>
             <label>
                 <span>Data di Fine</span>
-                 <input type="date" class="form-control" id="date-stop" [(ngModel)]="filterLteDate" />
+                <input type="date" class="form-control" id="date-stop" [(ngModel)]="filterLteDate" />
             </label>
-            <button type="button" class="submit " (click)="onFormSubmit()"><p>Invio</p></button>
+            <button type="button" class="submit " (click)="onFormSubmit()">
+                <p>Invio</p>
+            </button>
         </div>
     </div>
 </div>
