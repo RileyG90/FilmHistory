@@ -33,6 +33,7 @@ export class AddCommentItemComponent implements OnInit {
     this.commentApiService.createComment({ user_Id: this.currentUser.id, movie_Id: this.movie.id, comment: form.controls['comment'].value}).subscribe({
       next: (res) => {
         console.log(res);
+        window.location.reload();
       }
     });
 }

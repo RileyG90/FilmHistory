@@ -25,7 +25,6 @@ export class FavoritesItemComponent implements OnInit {
   constructor(
     private authService: AuthService, 
     private favouriteApiService: FavouriteApiService,
-    private movieApiService: MovieApiService,
     private router: Router) { }
 
   ngOnInit(): void {
@@ -36,7 +35,7 @@ export class FavoritesItemComponent implements OnInit {
     this.favouriteApiService.deleteFavourite(this.currentUser.id, this.movie.id).subscribe({
       next: (res) => {
       console.log(res);
-      this.router.navigateByUrl('/favorites');
+      window.location.reload();
       }
   });
 }

@@ -26,15 +26,24 @@ export class GetCommentItemComponent implements OnInit {
     private commentApiService: CommentApiService) { }
 
   ngOnInit(): void {
-
+    this.getUserIdById();
   }
 
   onSubmit(form: NgForm) {
     this.commentApiService.deleteCommentByIdComment(this.comment.id).subscribe({
       next: (res) => {
         console.log(res);
+        window.location.reload();
       }
     });
-}
+  }
+
+  getUserIdById(){
+    this.authService.getUserById(this.comment.user_Id).subscribe({
+      next: (res) => {
+         this.user = res;
+      }
+    });
+  }
 
 }

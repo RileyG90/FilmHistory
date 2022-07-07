@@ -28,6 +28,7 @@ export class MovieItemComponent implements OnInit {
     this.favouriteApiService.createFavourite({userId: this.currentUser.id, movieId: this.movie.id}).subscribe({
         next: (res) => {
         console.log(res);
+        window.location.reload();
         },
       });
     }
