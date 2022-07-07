@@ -24,7 +24,11 @@ export class FavouriteApiService {
   }
 
   updateFavourite(userId: number, rating: Partial<FavouriteMovie>){
-    return this.httpClient.patch<FavouriteMovie>(`${this.nodeBaseUrl}/favourite/${userId}/`, rating);
+    return this.httpClient.patch<FavouriteMovie>(`${this.nodeBaseUrl}/favourite/${userId}`, rating);
+  }
+
+  deleteFavourite(userId: number | undefined, movieId: number | undefined) {
+    return this.httpClient.delete(`${this.nodeBaseUrl}/favourite/${userId}/${movieId}`);
   }
 
 }

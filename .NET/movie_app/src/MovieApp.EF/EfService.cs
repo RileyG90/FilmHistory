@@ -32,9 +32,9 @@ namespace MovieApp.EF
             return commenti;
         }
 
-        public Comments CommentGetById(int commentId)
+        public Comments CommentGetByMovieId(int movieId)
         {
-            var commentoById = _context.Comments.Find(commentId);
+            var commentoById = _context.Comments.Find(movieId);
             return CommentMapper.From(commentoById);
         }
 
@@ -86,6 +86,11 @@ namespace MovieApp.EF
                 return 1;
             }
             return _context.Comments.Select(id => id.Id).Max() + 1;
+        }
+
+        List<Comments> IStorageService.CommentGetByMovieId(int movieId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

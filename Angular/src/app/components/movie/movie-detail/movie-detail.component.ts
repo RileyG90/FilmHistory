@@ -14,9 +14,12 @@ import { User } from 'src/app/models/user';
   styleUrls: ['./movie-detail.component.scss']
 })
 export class MovieDetailComponent implements OnInit {
+
+ 
   
-  commentList: Partial<Comment> = {};
+  commentList: Partial<Comment> [] = [];
   movie: Partial<MovieData> = {};
+  userId: Partial<User> = {};
   currentUser: Partial<User> = {};
   now = new Date()
 
@@ -35,16 +38,20 @@ export class MovieDetailComponent implements OnInit {
       next: (response) => (this.movie = response),
       error: (err) => console.log('movie non trovato!'),
     });
-
+    
     this.getCommentsList();
+
   }
 
   getCommentsList(){
-    this.commentApiService.getAllComment().subscribe({
-      next: (res) => {
+    const id = this.activatedRoute.snapshot.params['movieId'];
+    this.commentApiService.getCommentByMovieId(id).subscribe({
+      next: (res: Comment[]) => {
         this.commentList = res;
         console.log(this.commentList);
       }
     });
   }
+
+  
 }

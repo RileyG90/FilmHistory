@@ -12,7 +12,7 @@ namespace MovieApp.Core.BL.Service
         //Operazioni CRUD
         Comments CreateComment(int user_Id, int movie_Id, string comment);
         List<Comments> GetAllComments();
-        Comments CommentGetById(int commentId);
+        List<Comments> CommentGetByMovieId(int movieId);
         bool DeleteCommentById(int commentId);
         Comments UpdateCommentById(int commentId, string comment);
 

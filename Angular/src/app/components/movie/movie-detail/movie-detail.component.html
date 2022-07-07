@@ -13,13 +13,17 @@
         <p class="movie-intro">{{movie.overview}} </p>
     </div>
     
+    <tnv-add-comment-item [movie]="movie"></tnv-add-comment-item>
 
+    <!-- COMMENT LIST -->
+  <tnv-get-comment-item *ngFor="let comment of commentList" [comment]="comment"></tnv-get-comment-item>
 </div>
 
 <!-- CREATE COMMENT -->
-<tnv-add-comment-item [movie]="movie"></tnv-add-comment-item>
+<!-- <tnv-add-comment-item [movie]="movie"></tnv-add-comment-item> -->
 
   <!-- COMMENT LIST -->
+<!-- <tnv-get-comment-item *ngFor="let comment of commentList" [comment]="comment"></tnv-get-comment-item> -->
 
   
 

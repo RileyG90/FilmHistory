@@ -31,20 +31,23 @@ namespace MovieApp.RestAPI.Controllers
 
         [EnableCors("Policy1")]
         [HttpGet]
-        [Route("{comment-id}")]
-        public ActionResult<CommentContract> GetCommentById([FromRoute(Name = "comment-id")] int commentId)
+        [Route("{movie-id}")]
+        public ActionResult<List<CommentContract>> GetCommentByMovieId([FromRoute(Name = "movie-id")] int movieId)
         {
             try
             {
 
-                var comment = _applicationManager.GetAllComments().First(com => com.Id == commentId);
-                return Ok(CommentMapper.From(comment));
+                var comment = _applicationManager.GetAllComments()
+                    .Where(com => com.Movie_Id == movieId)
+                    .Select(c => CommentMapper.From(c));
+                
+                return Ok(comment);
             }
             catch (Exception ex)
             {
                 var errorMessage = new ErrorResponse()
                 {
-                    Message = $"Non esiste un commento con id {commentId}"
+                    Message = $"Non esiste un commento con id {movieId}"
                 };
                 return NotFound(errorMessage);
             }

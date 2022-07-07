@@ -8,6 +8,7 @@ import { WelcomeComponent } from "./components/welcome/welcome.component";
 import { ProfileComponent } from "./components/profile/profile.component";
 import { FavoritesComponent } from "./components/favorites/favorites.component";
 import { MovieDetailComponent } from "./components/movie/movie-detail/movie-detail.component";
+import { GetCommentItemComponent } from "./components/comments/get-comment-item/get-comment-item.component";
 
 const routes: Routes = [
   {

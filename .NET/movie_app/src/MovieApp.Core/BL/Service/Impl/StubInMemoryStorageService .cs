@@ -83,5 +83,10 @@ namespace MovieApp.Core.BL.Service.Impl
                 _comment.Add(c);   
             }
         }
+
+        public List<Comments> CommentGetByMovieId(int movieId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

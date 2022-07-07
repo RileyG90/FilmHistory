@@ -15,11 +15,11 @@ export class CommentApiService {
     return this.httpClient.get<Comment>(`${this.dotnetBaseUrl}`);
   }
 
-  getCommentByIdComment(idComment: number | undefined){
-    return this.httpClient.get<Comment>((`${this.dotnetBaseUrl}/${idComment}`));
+  getCommentByMovieId(movieId: number | undefined){
+    return this.httpClient.get<Comment[]>((`${this.dotnetBaseUrl}/${movieId}`));
   }
 
-  deleteCommentByIdComment(idComment: number) {
+  deleteCommentByIdComment(idComment: number | undefined) {
     return this.httpClient.delete<Comment>((`${this.dotnetBaseUrl}/${idComment}`));
   }
 

@@ -16,6 +16,6 @@ router.delete(`${API_ROOT}/rating/:id`, deleteRating);
 router.get(`${API_ROOT}/favourite/:userId/:movieId`, getFavorite);
 router.get(`${API_ROOT}/favourite/:userId`, getAllFavorite);
 router.post(`${API_ROOT}/favourite`, createFavorite);
-router.delete(`${API_ROOT}/favourite/:id`, deleteFavorite);
+router.delete(`${API_ROOT}/favourite/:userId/:movieId`, deleteFavorite);
 
 export default router;
