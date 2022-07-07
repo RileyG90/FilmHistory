@@ -40,9 +40,10 @@ $diffRatio: ($contW - $imgW) / $contW;
 
 .cont {
     overflow: hidden;
-    position: relative;
-    width: $contW;
-    height: 550px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     margin: 0 auto 100px;
     background: #fff;
 }
