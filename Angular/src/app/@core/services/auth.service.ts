@@ -60,4 +60,8 @@ export class AuthService {
     return user;
   }
 
+  getUserById(id: number) {
+    return this.httpClient.get<User>(`${this.springbootBaseUrl}/${id}`);
+  }
+
 }

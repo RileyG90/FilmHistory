@@ -1,17 +1,14 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { AuthGuard } from "./@core/helpers/auth-guard";
-import { AppComponent } from "./app.component";
 import { LoginComponent } from "./@shared/components/login/login.component";
 import { MainPageComponent } from "./components/main-page/main-page.component";
 import { RegisterComponent } from "./@shared/components/register/register.component";
 import { WelcomeComponent } from "./components/welcome/welcome.component";
 import { ProfileComponent } from "./components/profile/profile.component";
 import { FavoritesComponent } from "./components/favorites/favorites.component";
-import { MovieComponent } from "./components/movie/movie.component";
-import { MovieDetailComponent } from "./components/movie-detail/movie-detail.component";
-import { FavoritesItemComponent } from "./components/favorites-item/favorites-item.component";
-import { CommentItemComponent } from "./components/comment-item/comment-item.component";
+import { MovieDetailComponent } from "./components/movie/movie-detail/movie-detail.component";
+import { CommentItemComponent } from "./components/comments/comment-item/comment-item.component";
 
 const routes: Routes = [
   {

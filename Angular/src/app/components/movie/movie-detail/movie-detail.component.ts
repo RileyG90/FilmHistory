@@ -9,6 +9,7 @@ import { MovieData } from 'src/app/models/movieData';
   styleUrls: ['./movie-detail.component.scss']
 })
 export class MovieDetailComponent implements OnInit {
+  
 
   movie: Partial<MovieData> = {};
 

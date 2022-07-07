@@ -14,11 +14,12 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './@shared/components/footer/footer.component';
-import { MovieItemComponent } from './components/movie-item/movie-item.component';
+import { MovieItemComponent } from './components/movie/movie-item/movie-item.component';
 import { MovieComponent } from './components/movie/movie.component';
-import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
-import { FavoritesItemComponent } from './components/favorites-item/favorites-item.component';
-import { CommentItemComponent } from './components/comment-item/comment-item.component';
+import { MovieDetailComponent } from './components/movie/movie-detail/movie-detail.component';
+import { FavoritesItemComponent } from './components/favorites/favorites-item/favorites-item.component';
+import { CommentItemComponent } from './components/comments/comment-item/comment-item.component';
+import { GetCommentComponent } from './components/comments/get-comment/get-comment.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CommentItemComponent } from './components/comment-item/comment-item.com
     MovieComponent,
     MovieDetailComponent,
     FavoritesItemComponent,
-    CommentItemComponent
+    CommentItemComponent,
+    GetCommentComponent
   ],
   imports: [
     BrowserModule,
