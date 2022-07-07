@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Comments } from 'src/app/models/comment';
+import { Comment } from 'src/app/models/comment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class CommentApiService {
   constructor(private httpClient: HttpClient) { }
 
   getAllComment(){
-    return this.httpClient.get<Comments>(`${this.dotnetBaseUrl}`);
+    return this.httpClient.get<Comment>(`${this.dotnetBaseUrl}`);
   }
 
   getCommentByIdComment(idComment: number){
@@ -23,7 +23,7 @@ export class CommentApiService {
     return this.httpClient.delete<Comment>((`${this.dotnetBaseUrl}/${idComment}`));
   }
 
-  createComment(comment: Comment) {
+  createComment(comment: Partial <Comment>) {
     return this.httpClient.post<Comment>((`${this.dotnetBaseUrl}`), comment);
   }
   

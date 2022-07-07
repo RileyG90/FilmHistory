@@ -39,14 +39,12 @@ export class FavoritesComponent implements OnInit {
     this.favouriteApiService.getFavouriteList(userId).subscribe({
       next: (res: FavouriteMovie[]) => {
         this.movieUserIdList = res;
-        console.log(this.movieUserIdList);
 
         for(let i = 0; i < this.movieUserIdList.length; i++) {
           let movieId = this.movieUserIdList[i].movieId
           this.movieApiService.getMovie(movieId).subscribe({
             next: (res) => {
               this.movieList[i] = res;
-              console.log(res);
             
           }})
           }   

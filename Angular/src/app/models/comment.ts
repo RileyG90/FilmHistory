@@ -1,5 +1,5 @@
-export interface Comments {
-    user_id: number;
-    movie_id: number;
+export interface Comment {
+    user_Id: number;
+    movie_Id: number;
     comment: string;
 }

@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { MovieApiService } from 'src/app/@core/services/api/movie-api.service';
-import { Genre, MovieData, ProductionCompany, ProductionCountry } from 'src/app/models/movieData';
+import { MovieData } from 'src/app/models/movieData';
 
 @Component({
   selector: 'tnv-movie-detail',
@@ -9,14 +9,11 @@ import { Genre, MovieData, ProductionCompany, ProductionCountry } from 'src/app/
   styleUrls: ['./movie-detail.component.scss']
 })
 export class MovieDetailComponent implements OnInit {
+
   movie: Partial<MovieData> = {};
-  movieGenre: Partial<Genre> [] = [];
-  movieProductionCompany: Partial<ProductionCompany> = {};
-  movieProductionCountry: Partial<ProductionCountry> = {};
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private router: Router,
     private movieApiService: MovieApiService
   ) {}
 

@@ -1,0 +1,51 @@
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.deps.json
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.runtimeconfig.json
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.pdb
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.Core.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.Core.pdb
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.csproj.AssemblyReference.cache
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.AssemblyInfoInputs.cache
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.AssemblyInfo.cs
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.csproj.CoreCompileInputs.cache
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.csproj.CopyComplete
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\refint\MovieApp.EF.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.pdb
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.genruntimeconfig.cache
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\ref\MovieApp.EF.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.deps.json
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.runtimeconfig.json
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.pdb
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.Core.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.Core.pdb
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.csproj.AssemblyReference.cache
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.AssemblyInfoInputs.cache
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.AssemblyInfo.cs
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.csproj.CoreCompileInputs.cache
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.csproj.CopyComplete
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\refint\MovieApp.EF.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.pdb
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.genruntimeconfig.cache
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\ref\MovieApp.EF.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.deps.json
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.runtimeconfig.json
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.EF.pdb
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.Core.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\bin\Debug\net6.0\MovieApp.Core.pdb
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.csproj.AssemblyReference.cache
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.AssemblyInfoInputs.cache
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.AssemblyInfo.cs
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.csproj.CoreCompileInputs.cache
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.csproj.CopyComplete
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\refint\MovieApp.EF.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.pdb
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\MovieApp.EF.genruntimeconfig.cache
+C:\FilmHistory\.NET\movie_app\src\MovieApp.EF\obj\Debug\net6.0\ref\MovieApp.EF.dll

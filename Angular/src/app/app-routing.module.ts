@@ -11,6 +11,7 @@ import { FavoritesComponent } from "./components/favorites/favorites.component";
 import { MovieComponent } from "./components/movie/movie.component";
 import { MovieDetailComponent } from "./components/movie-detail/movie-detail.component";
 import { FavoritesItemComponent } from "./components/favorites-item/favorites-item.component";
+import { CommentItemComponent } from "./components/comment-item/comment-item.component";
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: "login",
     component: LoginComponent,
+  },
+  {
+    path: "comment-item",
+    component: CommentItemComponent,
   },
   {
     path: "register",

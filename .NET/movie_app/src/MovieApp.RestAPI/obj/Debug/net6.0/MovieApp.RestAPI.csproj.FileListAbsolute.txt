@@ -1,0 +1,111 @@
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.exe
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.deps.json
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.runtimeconfig.json
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.pdb
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.Core.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.EF.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.Core.pdb
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.EF.pdb
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.csproj.AssemblyReference.cache
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.AssemblyInfoInputs.cache
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.AssemblyInfo.cs
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.csproj.CoreCompileInputs.cache
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\scopedcss\bundle\MovieApp.RestAPI.styles.css
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.csproj.CopyComplete
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\refint\MovieApp.RestAPI.dll
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.pdb
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.genruntimeconfig.cache
+C:\Users\Riley\OneDrive\CORSO JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\ref\MovieApp.RestAPI.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.exe
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.deps.json
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.runtimeconfig.json
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.pdb
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.Core.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.EF.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.Core.pdb
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.EF.pdb
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.csproj.AssemblyReference.cache
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.AssemblyInfoInputs.cache
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.AssemblyInfo.cs
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.csproj.CoreCompileInputs.cache
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\scopedcss\bundle\MovieApp.RestAPI.styles.css
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.csproj.CopyComplete
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\refint\MovieApp.RestAPI.dll
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.pdb
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.genruntimeconfig.cache
+C:\Users\Riley\OneDrive\CORSO-JFSD\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\ref\MovieApp.RestAPI.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\appsettings.json
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.exe
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.deps.json
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.runtimeconfig.json
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.RestAPI.pdb
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MySqlConnector.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.Core.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.EF.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.Core.pdb
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\bin\Debug\net6.0\MovieApp.EF.pdb
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.csproj.AssemblyReference.cache
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.AssemblyInfoInputs.cache
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.AssemblyInfo.cs
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.csproj.CoreCompileInputs.cache
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\scopedcss\bundle\MovieApp.RestAPI.styles.css
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.csproj.CopyComplete
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\refint\MovieApp.RestAPI.dll
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.pdb
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\MovieApp.RestAPI.genruntimeconfig.cache
+C:\FilmHistory\.NET\movie_app\src\MovieApp.RestAPI\obj\Debug\net6.0\ref\MovieApp.RestAPI.dll

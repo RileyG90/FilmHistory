@@ -27,8 +27,6 @@ export class FavoritesItemComponent implements OnInit {
     this.currentUser = this.authService.getCurrentUser();
   }
 
-  onSubmit(form: NgForm) {
-    }
-  
+ 
 
 }

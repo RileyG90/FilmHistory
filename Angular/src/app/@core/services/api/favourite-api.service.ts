@@ -20,8 +20,8 @@ export class FavouriteApiService {
     return this.httpClient.get<FavouriteMovie[]>(`${this.nodeBaseUrl}/favourite/${userId}`);
   }
 
-  createFavourite(rating: Partial<FavouriteMovie>){
-    return this.httpClient.post<FavouriteMovie>(`${this.nodeBaseUrl}/favourite`, rating); 
+  createFavourite(favorite: Partial<FavouriteMovie>){
+    return this.httpClient.post<FavouriteMovie>(`${this.nodeBaseUrl}/favourite`, favorite); 
   }
 
   updateFavourite(userId: number, rating: Partial<FavouriteMovie>){
