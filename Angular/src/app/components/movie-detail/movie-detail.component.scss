@@ -21,6 +21,9 @@
 
 .card-body {
     padding: 20px;
+    a {
+        text-decoration: none;
+    }
 }
 
 .movie-title {
@@ -29,6 +32,9 @@
 
 .movie-intro {
     font-size: 16px;
+    overflow: scroll;
+    height: 200px;
+    overflow-x: hidden;
 }
 
 .info {
