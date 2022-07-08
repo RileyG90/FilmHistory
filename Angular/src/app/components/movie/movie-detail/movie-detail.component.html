@@ -4,27 +4,26 @@
         <img [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path" alt="poster_path" />
     </div>
     <div class="info">
-        <span>{{movie.release_date | date: 'd MMM y'}}</span>
-        <span>{{movie.runtime}} min</span>
-        <span>{{movie.vote_average}}/10</span>
+        <div class="info_details">
+            <span>{{movie.release_date | date: 'd MMM y'}}</span>
+            <span>{{movie.runtime}} min</span>
+            <span>{{movie.vote_average}}/10</span>
+        </div>
+        <div class="card-body">
+            <h2 class="movie-title">{{movie.title}}</h2>
+            <p class="movie-intro">{{movie.overview}} </p>
+        </div>
     </div>
-    <div class="card-body">
-        <h2 class="movie-title">{{movie.title}}</h2>
-        <p class="movie-intro">{{movie.overview}} </p>
-    </div>
-    
-    <tnv-add-comment-item [movie]="movie"></tnv-add-comment-item>
-
-    <!-- COMMENT LIST -->
-  <tnv-get-comment-item *ngFor="let comment of commentList" [comment]="comment"></tnv-get-comment-item>
 </div>
+
+<tnv-add-comment-item [movie]="movie"></tnv-add-comment-item>
+
+<!-- COMMENT LIST -->
+<tnv-get-comment-item *ngFor="let comment of commentList" [comment]="comment"></tnv-get-comment-item>
+
 
 <!-- CREATE COMMENT -->
 <!-- <tnv-add-comment-item [movie]="movie"></tnv-add-comment-item> -->
 
-  <!-- COMMENT LIST -->
+<!-- COMMENT LIST -->
 <!-- <tnv-get-comment-item *ngFor="let comment of commentList" [comment]="comment"></tnv-get-comment-item> -->
-
-  
-
-
