@@ -6,6 +6,7 @@ import { Comment } from 'src/app/models/comment';
 import { AuthService } from 'src/app/@core/services/auth.service';
 import { User } from 'src/app/models/user';
 import { NgForm } from '@angular/forms';
+import { Rating } from 'src/app/models/rating';
 
 @Component({
   selector: 'tnv-get-comment-item',
@@ -15,7 +16,8 @@ import { NgForm } from '@angular/forms';
 export class GetCommentItemComponent implements OnInit {
 
   @Input() comment: Partial<Comment> = {};
-  @Input() user: Partial<User> = {}
+  @Input() user: Partial<User> = {};
+  @Input() rate: Partial<Rating> ={};
 
 
   commentList: Partial<Comment> = {};

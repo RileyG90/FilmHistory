@@ -22,8 +22,16 @@
                             style="background: #fff;"
                             ></textarea>
                         <label class="form-label" for="comment">Message</label>
+                        <td><ngb-rating
+                            [ngModel]
+                            name="rate"
+                            [rate]="5" [max]="5"
+                            id="rate"
+                            required=""
+                            class="form-control"                            
+                            ></ngb-rating></td>
+                        <label class="form-label" for="rating">Vota</label>
                       </div>
-
                     </div>
                         
                     

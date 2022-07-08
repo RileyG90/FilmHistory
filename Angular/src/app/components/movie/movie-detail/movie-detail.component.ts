@@ -6,6 +6,7 @@ import { MovieApiService } from 'src/app/@core/services/api/movie-api.service';
 import { AuthService } from 'src/app/@core/services/auth.service';
 import { Comment } from 'src/app/models/comment';
 import { MovieData } from 'src/app/models/movieData';
+import { Rating } from 'src/app/models/rating';
 import { User } from 'src/app/models/user';
 
 @Component({
@@ -16,7 +17,6 @@ import { User } from 'src/app/models/user';
 export class MovieDetailComponent implements OnInit {
 
  
-  
   commentList: Partial<Comment> [] = [];
   movie: Partial<MovieData> = {};
   userId: Partial<User> = {};
@@ -51,6 +51,7 @@ export class MovieDetailComponent implements OnInit {
         console.log(this.commentList);
       }
     });
+
   }
 
   
