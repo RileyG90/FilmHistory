@@ -19,8 +19,8 @@ export class MovieComponent implements OnInit, OnChanges {
   constructor(private movieApiService: MovieApiService) { }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes);
-    this.movieApiService.getMovieByDateRange(changes['filterGteDate'].currentValue, changes['filterLteDate'].currentValue).subscribe(
+      
+    this.movieApiService.getMovieByDateRange(this.filterGteDate, this.filterLteDate).subscribe(
       response => {
         this.movies = response.results.slice(0, 10);
       });   

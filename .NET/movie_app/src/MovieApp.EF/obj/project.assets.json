@@ -722,7 +722,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Riley\\.nuget\\packages\\": {}
+    "C:\\Users\\DOMY\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -730,11 +730,11 @@
       "projectUniqueName": "C:\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.EF\\MovieApp.EF.csproj",
       "projectName": "MovieApp.EF",
       "projectPath": "C:\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.EF\\MovieApp.EF.csproj",
-      "packagesPath": "C:\\Users\\Riley\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\DOMY\\.nuget\\packages\\",
       "outputPath": "C:\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.EF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Riley\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DOMY\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

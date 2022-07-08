@@ -6,11 +6,21 @@
                 Inserisci l'intervallo di tempo che hai scelto!</h4>
             <label>
                 <span>Data di Inizio</span>
-                <input type="date" class="form-control" id="date-start" [(ngModel)]="filterGteDate" />
+                <input 
+                    type="date" 
+                    class="form-control" 
+                    id="date-start" 
+                    [max]="filterLteDate"
+                    [(ngModel)]="filterGteDate" />
             </label>
             <label>
                 <span>Data di Fine</span>
-                <input type="date" class="form-control" id="date-stop" [(ngModel)]="filterLteDate" />
+                <input
+                    type="date" 
+                    class="form-control" 
+                    id="date-stop"
+                    [min]="filterGteDate"
+                    [(ngModel)]="filterLteDate" />
             </label>
             <button type="button" class="submit " (click)="onFormSubmit()">
                 <p>Invio</p>

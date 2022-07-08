@@ -882,7 +882,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Riley\\.nuget\\packages\\": {}
+    "C:\\Users\\DOMY\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -890,11 +890,11 @@
       "projectUniqueName": "C:\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.RestAPI\\MovieApp.RestAPI.csproj",
       "projectName": "MovieApp.RestAPI",
       "projectPath": "C:\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.RestAPI\\MovieApp.RestAPI.csproj",
-      "packagesPath": "C:\\Users\\Riley\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\DOMY\\.nuget\\packages\\",
       "outputPath": "C:\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.RestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Riley\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DOMY\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
