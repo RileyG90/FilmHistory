@@ -15,7 +15,6 @@ import { User } from 'src/app/models/user';
 })
 export class FavoritesItemComponent implements OnInit {
 
-  starRating: number = 0;
 
   @Input () movie: Partial<MovieData> = {};
   @Input () favoriteId: Partial<FavouriteMovie> = {};
