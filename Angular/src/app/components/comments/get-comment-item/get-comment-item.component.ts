@@ -32,13 +32,21 @@ export class GetCommentItemComponent implements OnInit {
   }
 
   /*onSubmit(form: NgForm) {
+
     this.commentApiService.deleteCommentByIdComment(this.comment.id).subscribe({
       next: (res) => {
         console.log(res);
         window.location.reload();
       }
     });
-  }*/
+  }
+  
+  html
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <button type="submit" *ngIf="onSubmit" class="btn btn-outline-danger btn-sm mt-3">Cancel</button>
+  </form>
+  
+  */
 
   getUserIdById(){
     this.authService.getUserById(this.comment.user_Id).subscribe({
