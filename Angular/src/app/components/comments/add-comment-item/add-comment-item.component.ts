@@ -5,6 +5,7 @@ import { CommentApiService } from 'src/app/@core/services/api/comment-api.servic
 import { RatingApiService } from 'src/app/@core/services/api/rating-api.service';
 import { AuthService } from 'src/app/@core/services/auth.service';
 import { MovieData } from 'src/app/models/movieData';
+import { Rating } from 'src/app/models/rating';
 import { User } from 'src/app/models/user';
 
 @Component({
@@ -17,7 +18,7 @@ export class AddCommentItemComponent implements OnInit {
   @Input () movie: Partial<MovieData> = {};
 
   currentUser: Partial<User> = {};
-  now = new Date()
+  now = new Date();
 
 
   constructor(

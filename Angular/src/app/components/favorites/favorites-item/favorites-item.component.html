@@ -3,7 +3,6 @@
     <div class="card-body">
         <a href [routerLink]="['/detail', movie.id]">{{ movie.title | titlecase }}</a>
         <p class="card-text">{{ movie.release_date | date: 'd MMM y' }}</p>
-        <td class=""><ngb-rating [(rate)]="starRating" [max]="5" ></ngb-rating></td>
         <form #deleteMovieFavorite="ngForm" (ngSubmit)="onSubmit(deleteMovieFavorite)">
             <button type="submit" *ngIf="onSubmit"class="form-label btn btn-primary rounded submit px-3 mt-2">
               Elimina
