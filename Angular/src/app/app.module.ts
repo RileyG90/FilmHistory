@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,6 +21,7 @@ import { MovieDetailComponent } from './components/movie/movie-detail/movie-deta
 import { FavoritesItemComponent } from './components/favorites/favorites-item/favorites-item.component';
 import { AddCommentItemComponent } from './components/comments/add-comment-item/add-comment-item.component';
 import { GetCommentItemComponent } from './components/comments/get-comment-item/get-comment-item.component';
+import { MoviePopularityComponent } from './components/movie/movie-popularity/movie-popularity.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { GetCommentItemComponent } from './components/comments/get-comment-item/
     FavoritesItemComponent,
     AddCommentItemComponent,
     GetCommentItemComponent,
+    MoviePopularityComponent,
   ],
   imports: [
     BrowserModule,

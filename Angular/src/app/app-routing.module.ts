@@ -9,6 +9,7 @@ import { ProfileComponent } from "./components/profile/profile.component";
 import { FavoritesComponent } from "./components/favorites/favorites.component";
 import { MovieDetailComponent } from "./components/movie/movie-detail/movie-detail.component";
 import { GetCommentItemComponent } from "./components/comments/get-comment-item/get-comment-item.component";
+import { MoviePopularityComponent } from "./components/movie/movie-popularity/movie-popularity.component";
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     children: [
       { path: "home", component: WelcomeComponent },
+      { path: "popularity", component: MoviePopularityComponent },
       { path: "profile", component: ProfileComponent },
       { path: "favorites", component: FavoritesComponent },
       { path: "detail/:movieId", component: MovieDetailComponent },

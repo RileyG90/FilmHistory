@@ -1,37 +1,9 @@
-<div class="container">
-    <div class="cont">
-        <div class="form sign-in">
-            <h2>Benvenuto</h2>
-            <h4 style="display: flex;justify-content: center " class="py-3">
-                Inserisci l'intervallo di tempo che hai scelto!</h4>
-            <label>
-                <span>Data di Inizio</span>
-                <input 
-                    type="date" 
-                    class="form-control" 
-                    id="date-start" 
-                    [max]="filterLteDate"
-                    [(ngModel)]="filterGteDate" />
-            </label>
-            <label>
-                <span>Data di Fine</span>
-                <input
-                    type="date" 
-                    class="form-control" 
-                    id="date-stop"
-                    [min]="filterGteDate"
-                    [(ngModel)]="filterLteDate" />
-            </label>
-            <button type="button" class="submit " (click)="onFormSubmit()">
-                <p>Invio</p>
-            </button>
-        </div>
-    </div>
-</div>
-
-<div class="row" *ngIf="isMovieListRendered">
-    <div class="col-12">
-        <tnv-movie [filterGteDate]="startDate" [filterLteDate]="endDate">
-        </tnv-movie>
+<div style="background: url(../../../assets/images/popcorn.png); background-size: cover; height:80vh;" class="img page-holder bg-cover">
+    <div class="container py-5">
+        <header class="text-center text-white py-5">
+            <h1 class="display-4 font-weight-bold mb-4">Film&History</h1>
+            <p class="lead mb-0">Cerca migliaia di film in esclusiva</p>
+            <button class="btn btn-light"><a href="/popularity"> Cerca</a></button>
+        </header>
     </div>
 </div>
