@@ -12,7 +12,7 @@ export class RatingApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getRating(userId: number, movieId: number){
+  getRating(userId: number | undefined, movieId: number | undefined){
     return this.httpClient.get<Rating>(`${this.nodeBaseUrl}/rating/${userId}/${movieId}`);
   }
 
