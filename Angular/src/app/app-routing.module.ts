@@ -10,6 +10,7 @@ import { FavoritesComponent } from "./components/favorites/favorites.component";
 import { MovieDetailComponent } from "./components/movie/movie-detail/movie-detail.component";
 import { GetCommentItemComponent } from "./components/comments/get-comment-item/get-comment-item.component";
 import { MoviePopularityComponent } from "./components/movie/movie-popularity/movie-popularity.component";
+import { AddCommentItemComponent } from "./components/comments/add-comment-item/add-comment-item.component";
 
 const routes: Routes = [
   {
@@ -22,6 +23,8 @@ const routes: Routes = [
       { path: "profile", component: ProfileComponent },
       { path: "favorites", component: FavoritesComponent },
       { path: "detail/:movieId", component: MovieDetailComponent },
+      { path: "favorites", component: FavoritesComponent },
+
       { path: "", redirectTo: "home", pathMatch: 'full' },
     ],
   },

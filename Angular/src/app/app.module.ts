@@ -22,6 +22,8 @@ import { FavoritesItemComponent } from './components/favorites/favorites-item/fa
 import { AddCommentItemComponent } from './components/comments/add-comment-item/add-comment-item.component';
 import { GetCommentItemComponent } from './components/comments/get-comment-item/get-comment-item.component';
 import { MoviePopularityComponent } from './components/movie/movie-popularity/movie-popularity.component';
+import { NgxStarRatingModule } from 'ngx-star-rating';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import { MoviePopularityComponent } from './components/movie/movie-popularity/mo
     AppRoutingModule,
     FormsModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule, NgxStarRatingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
