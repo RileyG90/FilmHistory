@@ -14,13 +14,24 @@ p {
 }
 
 button {
-    width: 70px;
-    display: flex;
-    justify-self: flex-start;
+    width: auto;
     margin-top: 1em;
+    border: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+
     a {
         text-decoration: none;
         color: black;
+    }
+}
+
+button:hover {
+    background: #8C0335;
+
+    a {
+        color: whitesmoke;
     }
 }
 
