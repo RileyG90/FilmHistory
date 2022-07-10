@@ -1,11 +1,31 @@
-<!-- MOVIE CARD -->
-<div class="container">
-    <div class="movie-card">
-        <div class="movie-img">
-            <img [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path" alt="poster_path" />
+<div class="movie_card" id="tomb">
+    <div class="info_section">
+        <div class="movie_header">
+            <img [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path" alt="poster_path" class="locandina" />
+            <h1>{{movie.title}}</h1>
+            <h4>{{movie.release_date | date: 'd MMM y'}}, Roar Uthaug</h4>
+            <span class="minutes">{{movie.runtime}} min</span>
+            <p class="type">Action, Fantasy</p>
+            <p class="type">Voto: {{ movie.vote_average }}/10</p>
         </div>
-        <div class="info">
-            <div class="info_details">
+        <div class="movie_desc">
+            <p class="text">
+                {{movie.overview}}
+            </p>
+        </div>
+    </div>
+    <div class="blur_back tomb_back"> <img [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.backdrop_path" alt="poster_path" class="locandina2" />
+    </div>
+</div>
+
+<!-- MOVIE CARD 
+<div class=" container ">
+    <div class="movie-card ">
+        <div class="movie-img ">
+            <img [src]=" 'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path " alt="poster_path " />
+        </div>
+        <div class="info ">
+            <div class="info_details ">
                 <div>
                     <p>Data di Uscita: {{movie.release_date | date: 'd MMM y'}}</p>
                 </div>
@@ -16,16 +36,16 @@
                     <p>Voto: {{ movie.vote_average }}/10</p>
                 </div>
             </div>
-            <div class="card-body">
-                <h2 class="movie-title">{{movie.title}}</h2>
-                <p class="movie-intro">{{movie.overview}} </p>
+            <div class="card-body ">
+                <h2 class="movie-title ">{{movie.title}}</h2>
+                <p class="movie-intro ">{{movie.overview}} </p>
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!-- ADD COMMENT -->
 
-<tnv-add-comment-item [movie]="movie"></tnv-add-comment-item>
+<tnv-add-comment-item [movie]="movie "></tnv-add-comment-item>
 
 <!-- COMMENT LIST -->
-<tnv-get-comment-item *ngFor="let comment of commentList" [comment]="comment"></tnv-get-comment-item>
+<tnv-get-comment-item *ngFor="let comment of commentList " [comment]="comment "></tnv-get-comment-item>
