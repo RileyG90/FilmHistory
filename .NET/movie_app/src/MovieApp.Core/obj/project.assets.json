@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\DOMY\\.nuget\\packages\\": {}
+    "C:\\Users\\glo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.Core\\MovieApp.Core.csproj",
+      "projectUniqueName": "C:\\Users\\glo\\Tnv\\angular\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.Core\\MovieApp.Core.csproj",
       "projectName": "MovieApp.Core",
-      "projectPath": "C:\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.Core\\MovieApp.Core.csproj",
-      "packagesPath": "C:\\Users\\DOMY\\.nuget\\packages\\",
-      "outputPath": "C:\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.Core\\obj\\",
+      "projectPath": "C:\\Users\\glo\\Tnv\\angular\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.Core\\MovieApp.Core.csproj",
+      "packagesPath": "C:\\Users\\glo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\glo\\Tnv\\angular\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DOMY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\glo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

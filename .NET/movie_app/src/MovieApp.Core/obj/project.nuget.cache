@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mgeotVoKT8VgimdV7r8EdSinWlSxDYHSwh96PQrIYt7PZq2wQrAtpusTlHOxcXqkj2T/ykFIbp2piZAnA5GenA==",
+  "dgSpecHash": "sJH95UaAOpNv0IjDdoZQJCgmJ/sMwTbOGWd6LAMGtAfW0Kq3t1WjHPk4Gg1H9QTJo8xbkWBpO7LNKffq2Cxwxg==",
   "success": true,
-  "projectFilePath": "C:\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.Core\\MovieApp.Core.csproj",
+  "projectFilePath": "C:\\Users\\glo\\Tnv\\angular\\FilmHistory\\.NET\\movie_app\\src\\MovieApp.Core\\MovieApp.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

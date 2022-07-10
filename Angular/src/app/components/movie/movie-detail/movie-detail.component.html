@@ -3,9 +3,8 @@
         <div class="movie_header">
             <img [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path" alt="poster_path" class="locandina" />
             <h1>{{movie.title}}</h1>
-            <h4>{{movie.release_date | date: 'd MMM y'}}, Roar Uthaug</h4>
+            <h4>{{movie.release_date | date: 'd MMM y'}}</h4>
             <span class="minutes">{{movie.runtime}} min</span>
-            <p class="type">Action, Fantasy</p>
             <p class="type">Voto: {{ movie.vote_average }}/10</p>
         </div>
         <div class="movie_desc">
@@ -18,31 +17,6 @@
     </div>
 </div>
 
-<!-- MOVIE CARD 
-<div class=" container ">
-    <div class="movie-card ">
-        <div class="movie-img ">
-            <img [src]=" 'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path " alt="poster_path " />
-        </div>
-        <div class="info ">
-            <div class="info_details ">
-                <div>
-                    <p>Data di Uscita: {{movie.release_date | date: 'd MMM y'}}</p>
-                </div>
-                <div>
-                    <p>Durata: {{movie.runtime}} min</p>
-                </div>
-                <div>
-                    <p>Voto: {{ movie.vote_average }}/10</p>
-                </div>
-            </div>
-            <div class="card-body ">
-                <h2 class="movie-title ">{{movie.title}}</h2>
-                <p class="movie-intro ">{{movie.overview}} </p>
-            </div>
-        </div>
-    </div>
-</div>-->
 <!-- ADD COMMENT -->
 
 <tnv-add-comment-item [movie]="movie "></tnv-add-comment-item>

@@ -34,3 +34,15 @@ C:\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\MovieApp.Core.d
 C:\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\refint\MovieApp.Core.dll
 C:\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\MovieApp.Core.pdb
 C:\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\ref\MovieApp.Core.dll
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\bin\Debug\net6.0\MovieApp.Core.deps.json
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\bin\Debug\net6.0\MovieApp.Core.dll
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\bin\Debug\net6.0\MovieApp.Core.pdb
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\MovieApp.Core.csproj.AssemblyReference.cache
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\MovieApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\MovieApp.Core.AssemblyInfoInputs.cache
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\MovieApp.Core.AssemblyInfo.cs
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\MovieApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\MovieApp.Core.dll
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\refint\MovieApp.Core.dll
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\MovieApp.Core.pdb
+C:\Users\glo\Tnv\angular\FilmHistory\.NET\movie_app\src\MovieApp.Core\obj\Debug\net6.0\ref\MovieApp.Core.dll
