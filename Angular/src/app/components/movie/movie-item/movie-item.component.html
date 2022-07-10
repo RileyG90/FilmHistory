@@ -5,7 +5,9 @@
       <p class="card-text">{{ movie.release_date | date: 'd MMM y' }}</p>
 
       <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-        <button type="submit" *ngIf="onSubmit" class="btn btn-primary">Add Preferiti</button>
+        <button type="submit" *ngIf="onSubmit" class="btn btn-light" style="background-color: #8C0335">
+          <p>Add Preferiti</p>
+        </button>
       </form>
       
   </div>

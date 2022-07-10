@@ -4,8 +4,8 @@
         <a href [routerLink]="['/detail', movie.id]">{{ movie.title | titlecase }}</a>
         <p class="card-text">{{ movie.release_date | date: 'd MMM y' }}</p>
         <form #deleteMovieFavorite="ngForm" (ngSubmit)="onSubmit(deleteMovieFavorite)">
-            <button type="submit" *ngIf="onSubmit"class="form-label btn btn-primary rounded submit px-3 mt-2">
-              Elimina
+            <button type="submit" *ngIf="onSubmit" class="btn btn-light" style="background-color: #8C0335">
+              <p>Elimina</p>
             </button>
         </form>
 
