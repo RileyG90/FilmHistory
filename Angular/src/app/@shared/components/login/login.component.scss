@@ -3,13 +3,6 @@
   width: 800px;
 }
 
-.img {
-  background-image: url('/assets/images/login-photo.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 .wrap {
   overflow: hidden;
   border-radius: 5px;
@@ -21,9 +14,33 @@
 .login-card {
   width: 400px;
 }
-  .img {
-    height: 200px;
-  }
+
 }
 
+.login-card-padding {
+  padding: 3em;
+  background-color: #3B403B;
+  background: transparentize($color: #3B403B, $amount: 0.3);
+}
 
+h3,
+label,
+p {
+  color: whitesmoke;
+}
+
+a {
+  color: #8C0335;
+}
+
+button{
+  background-color: #8C0335;
+  border-radius: 5%;
+  width: 100%;
+  border: 0;
+  height: 35px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}

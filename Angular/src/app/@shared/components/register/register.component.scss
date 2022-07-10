@@ -23,3 +23,31 @@
     height: 200px;
   }
 }
+
+.register-padding {
+  padding: 3em;
+  background-color: #3B403B;
+  background: transparentize($color: #3B403B, $amount: 0.3);
+}
+
+h3,
+label,
+p {
+  color: whitesmoke;
+}
+
+a {
+  color: #8C0335;
+}
+
+button{
+  background-color: #8C0335;
+  border-radius: 5%;
+  width: 100%;
+  border: 0;
+  height: 35px;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}

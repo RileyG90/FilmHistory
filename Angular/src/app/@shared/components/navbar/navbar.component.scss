@@ -6,3 +6,19 @@
 .navbar-dark-black {
     background-color: black !important;
 }
+
+.navbar-nav a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #BFBFBF;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav a:hover {
+    color: #8C0335;
+    padding-left: 8px;
+}
