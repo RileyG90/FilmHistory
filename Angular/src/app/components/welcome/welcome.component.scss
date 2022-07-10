@@ -1,7 +1,7 @@
 header {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: self-start;
 }
 
@@ -20,20 +20,22 @@ button {
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0;
-
+  
     a {
         text-decoration: none;
+        color: whitesmoke;
+        margin: 0;
+        padding: 0;
+    }
+  }
+  
+  button:hover {
+    background: white !important;
+  
+    a {
         color: black;
     }
-}
-
-button:hover {
-    background: #8C0335;
-
-    a {
-        color: whitesmoke;
-    }
-}
+  }
 
 @media screen and (max-width: 992px) {
     header {
@@ -41,7 +43,7 @@ button:hover {
     }
     button,
     h1,
-    p {
+    a {
         display: flex;
         justify-content: center;
     }
