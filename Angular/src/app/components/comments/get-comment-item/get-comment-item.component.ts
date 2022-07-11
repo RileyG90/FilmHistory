@@ -17,8 +17,9 @@ export class GetCommentItemComponent implements OnInit {
 
   @Input() comment: Partial<Comment> = {};
   @Input() user: Partial<User> = {};
-  @Input() rate: Partial<Rating> ={};
+  @Input() rate: Partial<Rating> = {};
 
+  currentRate: number = 0;
 
   commentList: Partial<Comment> = {};
   currentUser: Partial<User> = {};

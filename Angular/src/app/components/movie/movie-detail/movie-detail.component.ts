@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { CommentApiService } from 'src/app/@core/services/api/comment-api.service';
 import { MovieApiService } from 'src/app/@core/services/api/movie-api.service';
+import { RatingApiService } from 'src/app/@core/services/api/rating-api.service';
 import { AuthService } from 'src/app/@core/services/auth.service';
 import { Comment } from 'src/app/models/comment';
 import { MovieData } from 'src/app/models/movieData';
@@ -15,19 +16,25 @@ import { User } from 'src/app/models/user';
   styleUrls: ['./movie-detail.component.scss']
 })
 export class MovieDetailComponent implements OnInit {
+  
+  @Input() comment: Partial<Comment> = {};
+  @Input() user: Partial<User> = {};
+  //@Input() currentRate: Partial<Rating> = {};
 
- 
+
   commentList: Partial<Comment> [] = [];
   movie: Partial<MovieData> = {};
-  userId: Partial<User> = {};
+ 
   currentUser: Partial<User> = {};
   now = new Date()
+
 
   constructor(
     private activatedRoute: ActivatedRoute,
     private movieApiService: MovieApiService,
     private commentApiService: CommentApiService,
-    private authService: AuthService
+    private authService: AuthService,
+    private ratingApiService: RatingApiService
   ) {}
 
   ngOnInit(): void {
@@ -40,8 +47,18 @@ export class MovieDetailComponent implements OnInit {
     });
     
     this.getCommentsList();
+    
 
   }
+
+  // getUserIdById(){
+  //   this.authService.getUserById(1).subscribe({
+  //     next: (res) => {
+  //        this.user = res;
+  //        console.log(this.user.id);
+  //     }
+  //   });
+  // }
 
   getCommentsList(){
     const id = this.activatedRoute.snapshot.params['movieId'];
@@ -51,8 +68,15 @@ export class MovieDetailComponent implements OnInit {
         console.log(this.commentList);
       }
     });
-
+    // this.ratingApiService.getRating(1, id).subscribe({
+    //   next: (res) => {
+    //     this.currentRate = res;
+    //     console.log(this.currentRate);
+    //   }
+    // });
   }
+
+
 
   
 }
