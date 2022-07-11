@@ -197,3 +197,13 @@ input {
         }
     }
 }
+
+@media screen and (max-width: 586px) {
+    .form.sign-in {
+        display: flex;
+        flex-direction: column;
+    }
+    .submit {
+        margin-top: 4em;
+    }
+}
