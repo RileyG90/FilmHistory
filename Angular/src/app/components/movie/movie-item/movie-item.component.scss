@@ -5,19 +5,29 @@ button {
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0;
-  
     p {
         text-decoration: none;
         color: whitesmoke;
         margin: 0;
         padding: 0;
     }
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background: white !important;
-  
     p {
         color: black;
     }
-  }
+}
+
+a {
+    color: #8C0335;
+    text-decoration: underline;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+}
+
+a:hover {
+    color: black;
+}
