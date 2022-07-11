@@ -1,8 +1,8 @@
-.editorconfig
-.cache
-.dll
-.pdb
-.json
-.props
-.exe
-.sentinel
+*.editorconfig
+*.cache
+*.dll
+*.pdb
+*.json
+*.props
+*.exe
+*.sentinel
