@@ -1,0 +1,23 @@
+button {
+    width: auto;
+    border: 0;
+    margin-bottom: 1em;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0;
+  
+    p {
+        text-decoration: none;
+        color: whitesmoke;
+        margin: 0;
+        padding: 0;
+    }
+  }
+  
+  button:hover {
+    background: white !important;
+  
+    p {
+        color: black;
+    }
+  }
