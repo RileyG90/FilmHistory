@@ -28,7 +28,7 @@
         background-blend-mode: multiply;
         z-index: 2;
         border-radius: 10px;
-        
+        background: linear-gradient(to right, #e5e6e6 70%, transparent 100%);
         .movie_header {
             position: relative;
             top: 2em;
@@ -150,6 +150,7 @@
         width: 100%;
     }
     .info_section {
+        background: linear-gradient(to right, 0%);
         background: linear-gradient(to top, #e5e6e6 50%, transparent 100%);
         display: inline-grid;
     }
