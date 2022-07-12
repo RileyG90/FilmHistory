@@ -5,8 +5,7 @@ import { MovieData } from 'src/app/models/movieData';
 @Component({
   selector: 'tnv-movie',
   templateUrl: './movie.component.html',
-  styleUrls: ['./movie.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default
+  styleUrls: ['./movie.component.scss']
 })
 export class MovieComponent implements OnInit, OnChanges {
 

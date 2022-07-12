@@ -5,8 +5,7 @@ import { Doc } from '../models/historical-events';
 @Component({
   selector: 'tnv-event',
   templateUrl: './event.component.html',
-  styleUrls: ['./event.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default
+  styleUrls: ['./event.component.scss']
 })
 export class EventComponent implements OnInit {
 
