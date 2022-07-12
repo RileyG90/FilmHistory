@@ -19,7 +19,8 @@ export class MovieDetailComponent implements OnInit {
   
   @Input() comment: Partial<Comment> = {};
   @Input() user: Partial<User> = {};
-  //@Input() currentRate: Partial<Rating> = {};
+  
+  currentRate: Partial<Rating> = {};
 
 
   commentList: Partial<Comment> [] = [];
@@ -47,18 +48,19 @@ export class MovieDetailComponent implements OnInit {
     });
     
     this.getCommentsList();
+    this.getUserIdById()
     
 
   }
 
-  // getUserIdById(){
-  //   this.authService.getUserById(1).subscribe({
-  //     next: (res) => {
-  //        this.user = res;
-  //        console.log(this.user.id);
-  //     }
-  //   });
-  // }
+  getUserIdById(){
+    this.authService.getUserById(this.comment.user_Id).subscribe({
+      next: (res) => {
+         this.user = res;
+         console.log(this.user.id);
+      }
+    });
+  }
 
   getCommentsList(){
     const id = this.activatedRoute.snapshot.params['movieId'];
@@ -68,12 +70,12 @@ export class MovieDetailComponent implements OnInit {
         console.log(this.commentList);
       }
     });
-    // this.ratingApiService.getRating(1, id).subscribe({
-    //   next: (res) => {
-    //     this.currentRate = res;
-    //     console.log(this.currentRate);
-    //   }
-    // });
+    this.ratingApiService.getRating(this.user.id, id).subscribe({
+      next: (res) => {
+        this.currentRate = res;
+        console.log(this.currentRate);
+      }
+    });
   }
 
 
