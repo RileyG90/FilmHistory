@@ -1,14 +1,15 @@
 <div class="card shadow" style="width: 15rem;">
-  <img class="card-img-top" [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path" alt="Card image cap">
+  <img class="card-img-top" [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path"
+    alt="Card image cap">
   <div class="card-body">
-      <a href [routerLink]="['/detail', movie.id]">{{ movie.title | titlecase }}</a>
-      <p class="card-text">{{ movie.release_date | date: 'd MMM y' }}</p>
+    <a href [routerLink]="['/detail', movie.id]">{{ movie.title | titlecase }}</a>
+    <p class="card-text">{{ movie.release_date | date: 'd MMM y' }}</p>
 
-      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-        <button type="submit" *ngIf="onSubmit" class="btn btn-light" style="background-color: #8C0335">
-          <p>Add Preferiti</p>
-        </button>
-      </form>
-      
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <button type="submit" *ngIf="onSubmit" class="btn btn-light" style="background-color: #8C0335">
+        <p>Add Preferiti</p>
+      </button>
+    </form>
+
   </div>
 </div>

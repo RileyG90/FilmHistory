@@ -3,20 +3,12 @@
         <div class="form sign-in">
             <label>
                 <span>Data di Inizio</span>
-                <input 
-                    type="date" 
-                    class="form-control" 
-                    id="date-start" 
-                    [max]="filterLteDate"
+                <input type="date" class="form-control" id="date-start" [max]="filterLteDate"
                     [(ngModel)]="filterGteDate" />
             </label>
             <label>
                 <span>Data di Fine</span>
-                <input
-                    type="date" 
-                    class="form-control" 
-                    id="date-stop"
-                    [min]="filterGteDate"
+                <input type="date" class="form-control" id="date-stop" [min]="filterGteDate"
                     [(ngModel)]="filterLteDate" />
             </label>
             <button type="button" class="submit " (click)="onFormSubmit()">
