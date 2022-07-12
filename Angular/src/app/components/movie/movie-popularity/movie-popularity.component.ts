@@ -20,10 +20,6 @@ export class MoviePopularityComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getAllComments() {
-    this.commentApiService.getAllComment();
-  }
-
   onFormSubmit() {
 
     this.startDate = this.filterGteDate;
