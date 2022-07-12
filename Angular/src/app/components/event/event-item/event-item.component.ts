@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HistoricalEventsService } from 'src/app/@core/services/api/historical-events.service';
-import { Doc } from '../../models/historical-events';
+import { Doc } from '../../../models/historical-events';
 
 @Component({
   selector: 'tnv-event-item',

@@ -24,7 +24,7 @@ import { GetCommentItemComponent } from './components/comments/get-comment-item/
 import { MoviePopularityComponent } from './components/movie/movie-popularity/movie-popularity.component';
 import { NgxStarRatingModule } from 'ngx-star-rating';
 import { ReactiveFormsModule } from '@angular/forms';
-import { EventItemComponent } from './event/event-item/event-item.component';
+import { EventItemComponent } from './components/event/event-item/event-item.component';
 
 @NgModule({
   declarations: [
