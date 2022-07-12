@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { HistoricalEventsService } from 'src/app/@core/services/api/historical-events.service';
 import { Doc } from '../../models/historical-events';
 
 @Component({
@@ -7,11 +8,23 @@ import { Doc } from '../../models/historical-events';
   styleUrls: ['./event-item.component.scss']
 })
 export class EventItemComponent implements OnInit {
+  @Input() filterGteDate: string = "";
+  @Input() filterLteDate: string = "";
+  @Input() event: Partial<Doc> = {};
+  
+  events: Partial<Doc>[] = [];
 
-   @Input() event: Partial<Doc> = {};
+  constructor(private historicalEventsService: HistoricalEventsService) { }
 
-
-  constructor() { }
+  ngOnChanges(): void {
+      
+    this.historicalEventsService.getHistoricalEventsByDateRange(this.filterGteDate, this.filterLteDate).subscribe({
+      next: (res) => {
+        this.events = res.response.docs;
+        console.log(this.events);
+      }   
+    });   
+  }
 
   
 

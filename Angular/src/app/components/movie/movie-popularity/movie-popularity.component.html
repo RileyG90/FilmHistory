@@ -20,7 +20,8 @@
 
 <div class="row" *ngIf="isMovieListRendered">
     <div class="col-12">
+        <tnv-event-item [filterGteDate]="startDate" [filterLteDate]="endDate"> </tnv-event-item>
         <tnv-movie [filterGteDate]="startDate" [filterLteDate]="endDate"> </tnv-movie>
-        <tnv-event [filterGteDate]="startDate" [filterLteDate]="endDate"> </tnv-event>
+        
     </div>
 </div>
