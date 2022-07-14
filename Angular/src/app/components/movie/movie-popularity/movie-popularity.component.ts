@@ -1,4 +1,6 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { HistoricalEventsService } from 'src/app/@core/services/api/historical-events.service';
+import { Doc } from 'src/app/models/historical-events';
 import { CommentApiService } from '../../../@core/services/api/comment-api.service';
 
 @Component({
@@ -14,8 +16,9 @@ export class MoviePopularityComponent implements OnInit {
   endDate: string = "";
   isMovieListRendered = false;
 
-  constructor(private commentApiService: CommentApiService,
-    private changeDetector: ChangeDetectorRef) { }
+  events: Partial<Doc>[] = [];
+
+  constructor(private historicalEventsService: HistoricalEventsService) { }
 
   ngOnInit(): void {
   }
@@ -46,4 +49,5 @@ export class MoviePopularityComponent implements OnInit {
 
     return true;
   }
+
 }

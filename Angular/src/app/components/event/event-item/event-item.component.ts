@@ -16,15 +16,15 @@ export class EventItemComponent implements OnInit {
 
   constructor(private historicalEventsService: HistoricalEventsService) { }
 
-  ngOnChanges(): void {
+  // ngOnChanges(): void {
       
-    this.historicalEventsService.getHistoricalEventsByDateRange(this.filterGteDate, this.filterLteDate).subscribe({
-      next: (res) => {
-        this.events = res.response.docs;
-        console.log(this.events);
-      }   
-    });   
-  }
+  //   this.historicalEventsService.getHistoricalEventsByDateRange(this.filterGteDate, this.filterLteDate).subscribe({
+  //     next: (res) => {
+  //       this.events = res.response.docs;
+  //       console.log(this.events);
+  //     }   
+  //   });   
+  // }
 
   
 

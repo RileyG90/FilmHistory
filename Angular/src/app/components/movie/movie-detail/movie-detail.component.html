@@ -6,6 +6,12 @@
             <h4>{{movie.release_date | date: 'd MMM y'}}</h4>
             <span class="minutes">{{movie.runtime}} min</span>
             <p class="type">Voto: {{ movie.vote_average }}/10</p>
+            <p class="type">- Valutazione utente: <ngb-rating
+                name="rate"
+                [(rate)]="currentRate"
+                [max]="5"
+                id="rate"                
+                ></ngb-rating></p>
         </div>
         <div class="movie_desc">
             <p class="text">
@@ -19,7 +25,7 @@
 
 <!-- ADD COMMENT -->
 
-<tnv-add-comment-item [movie]="movie "></tnv-add-comment-item>
+<tnv-add-comment-item [movie]="movie"></tnv-add-comment-item>
 
 <!-- COMMENT LIST -->
 <tnv-get-comment-item *ngFor="let comment of commentList" [comment]="comment"></tnv-get-comment-item>

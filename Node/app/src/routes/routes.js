@@ -9,7 +9,7 @@ import { createFavorite, deleteFavorite, getAllFavorite, getFavorite } from "../
 
 const router = express.Router();
 
-router.get(`${API_ROOT}/rating/:userId/:movieId`, getRating);
+router.get(`${API_ROOT}/rating/:movieId`, getRating);
 router.post(`${API_ROOT}/rating`, createRating);
 router.patch(`${API_ROOT}/rating/:id`, updateRating);
 router.delete(`${API_ROOT}/rating/:id`, deleteRating);

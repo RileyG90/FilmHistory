@@ -12,8 +12,8 @@ export class RatingApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getRating(userId: number | undefined, movieId: number | undefined){
-    return this.httpClient.get<Rating>(`${this.nodeBaseUrl}/rating/${userId}/${movieId}`);
+  getRating(movieId: number | undefined){
+    return this.httpClient.get<Rating>(`${this.nodeBaseUrl}/rating/${movieId}`);
   }
 
   createRating(rating: Partial<Rating>){

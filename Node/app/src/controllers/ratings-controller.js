@@ -4,7 +4,6 @@ export const getRating = async (req, res) => {
     try {
         const rating = await Rating.findOne({
             where: {
-                userId: req.params.userId,
                 movieId: req.params.movieId,
             }
         });

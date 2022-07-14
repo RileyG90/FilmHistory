@@ -9,6 +9,9 @@ const FavouriteMovie = db.define('favourites', {
   },
   movieId: {
     type: DataTypes.INTEGER
+  },
+  event: {
+    type: DataTypes.STRING
   }
 }, {
   freezeTableName: true

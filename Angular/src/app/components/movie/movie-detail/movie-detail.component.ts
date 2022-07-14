@@ -20,7 +20,7 @@ export class MovieDetailComponent implements OnInit {
   @Input() comment: Partial<Comment> = {};
   @Input() user: Partial<User> = {};
   
-  currentRate: Partial<Rating> = {};
+  currentRate: number = 0;
 
 
   commentList: Partial<Comment> [] = [];
@@ -48,18 +48,9 @@ export class MovieDetailComponent implements OnInit {
     });
     
     this.getCommentsList();
-    this.getUserIdById()
+    this.getRatingByMovieId();
     
 
-  }
-
-  getUserIdById(){
-    this.authService.getUserById(this.comment.user_Id).subscribe({
-      next: (res) => {
-         this.user = res;
-         console.log(this.user.id);
-      }
-    });
   }
 
   getCommentsList(){
@@ -70,9 +61,13 @@ export class MovieDetailComponent implements OnInit {
         console.log(this.commentList);
       }
     });
-    this.ratingApiService.getRating(this.user.id, id).subscribe({
+  }
+
+  getRatingByMovieId(){
+    const id = this.activatedRoute.snapshot.params['movieId'];
+    this.ratingApiService.getRating(id).subscribe({
       next: (res) => {
-        this.currentRate = res;
+        this.currentRate = res.rating;
         console.log(this.currentRate);
       }
     });
