@@ -1,6 +1,7 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { HistoricalEventsService } from 'src/app/@core/services/api/historical-events.service';
 import { MovieApiService } from 'src/app/@core/services/api/movie-api.service';
+import { FavouriteMovie } from 'src/app/models/favouriteMovie';
 import { Doc } from 'src/app/models/historical-events';
 import { MovieData } from 'src/app/models/movieData';
 
@@ -16,7 +17,7 @@ export class MovieComponent implements OnInit, OnChanges {
 
   movies: Partial<MovieData>[] = [];
   events: Partial<Doc>[] = [];
-  public event: string | undefined;
+  event: Partial<FavouriteMovie> = {};
 
   constructor(
     private movieApiService: MovieApiService,
@@ -43,9 +44,10 @@ export class MovieComponent implements OnInit, OnChanges {
 
   getRandomEvent() {
     const randomEvent = Math.round(Math.random() * this.events.length);
-    this.event = this.events[randomEvent].abstract;
+    this.event.event = this.events[randomEvent].abstract;
     console.log(randomEvent);
     console.log(this.event);
+    
   }
 
 }

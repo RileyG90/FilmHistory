@@ -11,7 +11,7 @@ export class FavouriteApiService {
 
   constructor(private httpClient : HttpClient) { }
 
-  getFavourite(userId: number, movieId: number){
+  getFavourite(userId: number | undefined, movieId: number){
     return this.httpClient.get<FavouriteMovie>(`${this.nodeBaseUrl}/favourite/${userId}/${movieId}`);
   }
 

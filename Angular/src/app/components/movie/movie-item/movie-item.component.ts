@@ -17,11 +17,15 @@ import { MovieComponent } from '../movie.component';
 export class MovieItemComponent implements OnInit {
 
   @Input() movie: Partial<MovieData> = {};
-  @Input() favourite: Partial<FavouriteMovie> = {};
+  
+  
 
   currentUser: Partial<User> = {};
+
  
-  constructor(private favouriteApiService: FavouriteApiService, private authService: AuthService) { }
+  constructor(private favouriteApiService: FavouriteApiService, private authService: AuthService, private movieComponent: MovieComponent) { }
+
+  event = this.movieComponent.event;
 
   ngOnInit(): void {
     this.currentUser = this.authService.getCurrentUser();
@@ -29,8 +33,7 @@ export class MovieItemComponent implements OnInit {
 
   onSubmit(form: NgForm) {
     this.favouriteApiService.createFavourite({
-      userId: this.currentUser.id, movieId: this.movie.id, event: this.favourite.event
-    }).subscribe({
+      userId: this.currentUser.id, movieId: this.movie.id, event: this.event.event}).subscribe({
       next: (res) => {
         console.log(res);
       },
