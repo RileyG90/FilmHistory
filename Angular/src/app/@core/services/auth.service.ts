@@ -31,8 +31,7 @@ export class AuthService {
       };
     
     localStorage.setItem("user", JSON.stringify(response));
-    
-    
+  
     return of('login ok');*/
   }
 
@@ -61,7 +60,6 @@ export class AuthService {
   }
 
   getUserById(id: number | undefined) {
-
     return this.httpClient.get<Partial<User>>(`${this.springbootBaseUrl}/${id}`);
   }
 

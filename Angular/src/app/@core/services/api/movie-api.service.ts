@@ -17,9 +17,6 @@ export class MovieApiService {
 
   movies: Partial<MovieData>[] = [];
 
-
-
-
   constructor(private httpClient: HttpClient) { }
 
   getMovieDetails(movieId: number) {

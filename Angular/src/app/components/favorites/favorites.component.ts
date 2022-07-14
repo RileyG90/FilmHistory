@@ -15,8 +15,6 @@ export class FavoritesComponent implements OnInit {
 
   @Input() movie: Partial<MovieData> = {};
 
-
-
   currentUser: Partial<User> = {};
 
   movieUserIdList: Partial<FavouriteMovie>[] = [];

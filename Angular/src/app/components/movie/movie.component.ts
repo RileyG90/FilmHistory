@@ -16,7 +16,7 @@ export class MovieComponent implements OnInit, OnChanges {
 
   movies: Partial<MovieData>[] = [];
   events: Partial<Doc>[] = [];
-  event: string | undefined = "";
+  public event: string | undefined;
 
   constructor(
     private movieApiService: MovieApiService,
@@ -36,14 +36,15 @@ export class MovieComponent implements OnInit, OnChanges {
         next: (res) => {
           this.events = res.response.docs;
           console.log(this.events);
+          this.getRandomEvent();
         }
       });
   }
 
   getRandomEvent() {
     const randomEvent = Math.round(Math.random() * this.events.length);
-    console.log(randomEvent);
     this.event = this.events[randomEvent].abstract;
+    console.log(randomEvent);
     console.log(this.event);
   }
 
