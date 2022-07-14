@@ -18,12 +18,13 @@ export class MovieItemComponent implements OnInit {
 
   @Input() movie: Partial<MovieData> = {};
   
-  
-
   currentUser: Partial<User> = {};
 
- 
-  constructor(private favouriteApiService: FavouriteApiService, private authService: AuthService, private movieComponent: MovieComponent) { }
+  constructor(
+    private favouriteApiService: FavouriteApiService,
+    private authService: AuthService,
+    private movieComponent: MovieComponent
+    ) { }
 
   event = this.movieComponent.event;
 

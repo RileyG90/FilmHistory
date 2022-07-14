@@ -55,7 +55,6 @@ export class MovieDetailComponent implements OnInit {
     this.getRatingByMovieId();
     this.getEventByMovieId();
 
-
   }
 
   getCommentsList() {
@@ -88,5 +87,4 @@ export class MovieDetailComponent implements OnInit {
     })
   }
   
-
 }

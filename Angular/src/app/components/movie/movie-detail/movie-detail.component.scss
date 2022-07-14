@@ -20,6 +20,10 @@
     .event {
         align-items: baseline;
         padding-left: 32px !important;
+        
+        p {
+            margin: 16px 0;
+        }
     }
 
     &:hover {
