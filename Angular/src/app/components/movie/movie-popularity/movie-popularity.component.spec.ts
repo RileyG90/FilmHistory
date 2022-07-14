@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { MoviePopularityComponent } from './movie-popularity.component';
 
 describe('MoviePopularityComponent', () => {
@@ -8,9 +7,9 @@ describe('MoviePopularityComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MoviePopularityComponent ]
+      declarations: [MoviePopularityComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

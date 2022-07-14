@@ -15,14 +15,13 @@ import { User } from 'src/app/models/user';
 })
 export class FavoritesItemComponent implements OnInit {
 
-
-  @Input () movie: Partial<MovieData> = {};
-  @Input () favoriteId: Partial<FavouriteMovie> = {};
+  @Input() movie: Partial<MovieData> = {};
+  @Input() favoriteId: Partial<FavouriteMovie> = {};
 
   currentUser: Partial<User> = {};
 
   constructor(
-    private authService: AuthService, 
+    private authService: AuthService,
     private favouriteApiService: FavouriteApiService,
     private router: Router) { }
 
@@ -33,10 +32,10 @@ export class FavoritesItemComponent implements OnInit {
   onSubmit(form: NgForm) {
     this.favouriteApiService.deleteFavourite(this.currentUser.id, this.movie.id).subscribe({
       next: (res) => {
-      console.log(res);
-      window.location.reload();
+        console.log(res);
+        window.location.reload();
       }
-  });
-}
+    });
+  }
 
 }

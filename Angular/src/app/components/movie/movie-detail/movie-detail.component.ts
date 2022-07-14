@@ -16,16 +16,16 @@ import { User } from 'src/app/models/user';
   styleUrls: ['./movie-detail.component.scss']
 })
 export class MovieDetailComponent implements OnInit {
-  
+
   @Input() comment: Partial<Comment> = {};
   @Input() user: Partial<User> = {};
-  
+
   currentRate: number = 0;
 
 
-  commentList: Partial<Comment> [] = [];
+  commentList: Partial<Comment>[] = [];
   movie: Partial<MovieData> = {};
- 
+
   currentUser: Partial<User> = {};
   now = new Date()
 
@@ -36,7 +36,7 @@ export class MovieDetailComponent implements OnInit {
     private commentApiService: CommentApiService,
     private authService: AuthService,
     private ratingApiService: RatingApiService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.currentUser = this.authService.getCurrentUser();
@@ -46,14 +46,14 @@ export class MovieDetailComponent implements OnInit {
       next: (response) => (this.movie = response),
       error: (err) => console.log('movie non trovato!'),
     });
-    
+
     this.getCommentsList();
     this.getRatingByMovieId();
-    
+
 
   }
 
-  getCommentsList(){
+  getCommentsList() {
     const id = this.activatedRoute.snapshot.params['movieId'];
     this.commentApiService.getCommentByMovieId(id).subscribe({
       next: (res: Comment[]) => {
@@ -63,7 +63,7 @@ export class MovieDetailComponent implements OnInit {
     });
   }
 
-  getRatingByMovieId(){
+  getRatingByMovieId() {
     const id = this.activatedRoute.snapshot.params['movieId'];
     this.ratingApiService.getRating(id).subscribe({
       next: (res) => {
@@ -73,7 +73,4 @@ export class MovieDetailComponent implements OnInit {
     });
   }
 
-
-
-  
 }

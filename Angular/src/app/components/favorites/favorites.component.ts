@@ -14,42 +14,43 @@ import { FavouriteMovie } from 'src/app/models/favouriteMovie';
 export class FavoritesComponent implements OnInit {
 
   @Input() movie: Partial<MovieData> = {};
-  
-  
-  
+
+
+
   currentUser: Partial<User> = {};
 
   movieUserIdList: Partial<FavouriteMovie>[] = [];
   movieList: Partial<MovieData>[] = [];
 
   constructor(
-    private favouriteApiService: FavouriteApiService, 
-    private authService: AuthService, 
-    private movieApiService : MovieApiService) { }
+    private favouriteApiService: FavouriteApiService,
+    private authService: AuthService,
+    private movieApiService: MovieApiService) { }
 
-    movies = this.movieApiService.movies;
+  movies = this.movieApiService.movies;
 
   ngOnInit(): void {
     this.currentUser = this.authService.getCurrentUser();
     this.getAllFavorite();
   }
 
-  getAllFavorite(){
+  getAllFavorite() {
     const userId = this.currentUser.id;
     this.favouriteApiService.getFavouriteList(userId).subscribe({
       next: (res: FavouriteMovie[]) => {
         this.movieUserIdList = res;
 
-        for(let i = 0; i < this.movieUserIdList.length; i++) {
+        for (let i = 0; i < this.movieUserIdList.length; i++) {
           let movieId = this.movieUserIdList[i].movieId
           this.movieApiService.getMovie(movieId).subscribe({
             next: (res) => {
               this.movieList[i] = res;
-            
-          }})
-          }   
+
+            }
+          })
         }
-      });
-    }
-  
+      }
+    });
   }
+
+}

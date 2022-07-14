@@ -1,13 +1,14 @@
 <div class="card shadow" style="width: 15rem;">
-    <img class="card-img-top" [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path" alt="Card image cap">
-    <div class="card-body">
-        <a href [routerLink]="['/detail', movie.id]">{{ movie.title | titlecase }}</a>
-        <p class="card-text">{{ movie.release_date | date: 'd MMM y' }}</p>
-        <form #deleteMovieFavorite="ngForm" (ngSubmit)="onSubmit(deleteMovieFavorite)">
-            <button type="submit" *ngIf="onSubmit" class="btn btn-light" style="background-color: #8C0335">
-              <p>Elimina</p>
-            </button>
-        </form>
+  <img class="card-img-top" [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path"
+    alt="Card image cap">
+  <div class="card-body">
+    <a href [routerLink]="['/detail', movie.id]">{{ movie.title | titlecase }}</a>
+    <p class="card-text">{{ movie.release_date | date: 'd MMM y' }}</p>
+    <form #deleteMovieFavorite="ngForm" (ngSubmit)="onSubmit(deleteMovieFavorite)">
+      <button type="submit" *ngIf="onSubmit" class="btn btn-light" style="background-color: #8C0335">
+        <p>Elimina</p>
+      </button>
+    </form>
 
-    </div>
   </div>
+</div>

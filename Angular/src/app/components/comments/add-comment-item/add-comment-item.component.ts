@@ -20,7 +20,6 @@ export class AddCommentItemComponent implements OnInit {
   currentUser: Partial<User> = {};
   now = new Date();
 
-
   constructor(
     private commentApiService: CommentApiService,
     private authService: AuthService,

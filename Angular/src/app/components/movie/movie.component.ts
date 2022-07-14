@@ -21,12 +21,12 @@ export class MovieComponent implements OnInit, OnChanges {
   constructor(
     private movieApiService: MovieApiService,
     private historicalEventsService: HistoricalEventsService) { }
-  
+
   ngOnInit(): void {
   }
 
   ngOnChanges(): void {
-      
+
     this.movieApiService.getMovieByDateRange(this.filterGteDate, this.filterLteDate).subscribe(
       response => {
         this.movies = response.results.slice(0, 10);
@@ -36,9 +36,9 @@ export class MovieComponent implements OnInit, OnChanges {
         next: (res) => {
           this.events = res.response.docs;
           console.log(this.events);
-        }   
-      });  
-    }
+        }
+      });
+  }
 
   getRandomEvent() {
     const randomEvent = Math.round(Math.random() * this.events.length);
@@ -46,5 +46,5 @@ export class MovieComponent implements OnInit, OnChanges {
     this.event = this.events[randomEvent].abstract;
     console.log(this.event);
   }
-    
-  }
+
+}

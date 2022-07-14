@@ -1,17 +1,15 @@
 <div class="movie_card" id="tomb">
     <div class="info_section">
         <div class="movie_header">
-            <img [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path" alt="poster_path" class="locandina" />
+            <img [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.poster_path" alt="poster_path"
+                class="locandina" />
             <h1>{{movie.title}}</h1>
             <h4>{{movie.release_date | date: 'd MMM y'}}</h4>
             <span class="minutes">{{movie.runtime}} min</span>
             <p class="type">Voto: {{ movie.vote_average }}/10</p>
-            <p class="type">- Valutazione utente: <ngb-rating
-                name="rate"
-                [(rate)]="currentRate"
-                [max]="5"
-                id="rate"                
-                ></ngb-rating></p>
+            <p class="type">- Valutazione utente: <ngb-rating name="rate" [(rate)]="currentRate" [max]="5" id="rate">
+                </ngb-rating>
+            </p>
         </div>
         <div class="movie_desc">
             <p class="text">
@@ -19,12 +17,12 @@
             </p>
         </div>
     </div>
-    <div class="blur_back tomb_back"> <img [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.backdrop_path" alt="poster_path" class="locandina2" style="background-size: cover;" />
+    <div class="blur_back tomb_back"> <img [src]="'https://image.tmdb.org/t/p/w440_and_h660_face' + movie.backdrop_path"
+            alt="poster_path" class="locandina2" style="background-size: cover;" />
     </div>
 </div>
 
 <!-- ADD COMMENT -->
-
 <tnv-add-comment-item [movie]="movie"></tnv-add-comment-item>
 
 <!-- COMMENT LIST -->
