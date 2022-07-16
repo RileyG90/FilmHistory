@@ -10,7 +10,7 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 40em;
+    height: 50em;
     margin: 50px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -44,22 +44,25 @@
         .movie_header {
             position: relative;
             top: 2em;
+            margin-bottom: 2em;
             height: 20%;
             margin-left: 2em;
 
             h1 {
                 color: black;
+                font-size: 30px;
                 font-weight: 400;
             }
 
             h4 {
                 color: #555;
+                font-size: 20px;
                 font-weight: 400;
             }
 
             .minutes {
                 display: inline-block;
-                margin-top: 15px;
+                margin: 10px 0px 10px;
                 color: #555;
                 padding: 5px;
                 border-radius: 5px;
@@ -69,7 +72,7 @@
             .type {
                 display: inline-block;
                 color: #959595;
-                margin-left: 10px;
+                margin: 0;
             }
 
             .locandina {
@@ -85,6 +88,8 @@
             position: relative;
             top: 2em;
             padding: 2em;
+            margin-top: 3em;
+            margin-bottom: 3em;
             height: 50%;
             width: 65%;
 

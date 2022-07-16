@@ -5,9 +5,9 @@
                 class="locandina" />
             <h1>{{movie.title}}</h1>
             <h4>{{movie.release_date | date: 'd MMM y'}}</h4>
-            <span class="minutes">{{movie.runtime}} min</span>
-            <p class="type">Voto: {{ movie.vote_average }}/10</p>
-            <p class="type">- Valutazione utente: <ngb-rating name="rate" [(rate)]="currentRate" [max]="5" id="rate">
+            <span class="minutes">{{movie.runtime}} min</span><br>
+            <p class="type">Media Voto: {{ movie.vote_average }}/10</p><br>
+            <p class="type">Valutazione Utente: <ngb-rating name="rate" [(rate)]="currentRate" [max]="5" id="rate">
                 </ngb-rating>
             </p>
         </div>
